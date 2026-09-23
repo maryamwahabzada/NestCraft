@@ -130,6 +130,17 @@
   </div>
 </section>
 
+<!-- section countdown -->
+
+<section class="countdown-section text-center text-white py-4">
+  <h5 class="fw-semibold mb-3">SALE ENDS IN</h5>
+  <div id="countdown" class=" d-flex justify-content-center gap-4 fs-3 fw-bold my-4">
+    <div><span id="days">00</span><br><small>DAYS</small></div>
+    <div><span id="hours">00</span><br><small>HRS</small></div>
+    <div><span id="minutes">00</span><br><small>MINS</small></div>
+    <div><span id="seconds">00</span><br><small>SEC</small></div>
+  </div>
+</section>
 
 
 
@@ -166,6 +177,49 @@
 
         });
     </script>
+
+
+<!-- countdown -->
+   
+<script>
+  // Initialize starting values
+  let days = 3;
+  let hours = 10;
+  let minutes = 7;
+  let seconds = 59;
+
+  function updateCountdown() {
+    document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+    document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+  }
+function tick() {
+    if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+      clearInterval(timer);
+      document.getElementById("countdown").innerHTML = "SALE ENDED";
+      return;
+    }
+
+    seconds--;
+    if (seconds < 0) {
+      seconds = 59;
+      minutes--;
+      if (minutes < 0) {
+        minutes = 59;
+        hours--;
+        if (hours < 0) {
+          hours = 23;
+          days--;
+        }
+      }
+    }
+    updateCountdown();
+  }
+
+  updateCountdown();
+  const timer = setInterval(tick, 1000);
+</script>
 
 </body>
 
