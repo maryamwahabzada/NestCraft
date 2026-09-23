@@ -7,13 +7,12 @@
 
 /* Navbar */
 
-/* Smooth background change */
-
 #mainNavbar {
     transition: background-color 0.5s ease;
 }
 nav .nav-link{
-    color: rgb(2, 0, 9);
+    color: #fff;
+    font-weight: bold;
 }
 
 
@@ -30,9 +29,34 @@ nav .nav-link{
 /* navbar end */
 
 /* hero section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('images/photo6.png') center/cover no-repeat;
+  }
 
-.installment-banner {
-      background-color: #6b2c2c;
-      color: #fff;
-      border-radius: .25rem;
-    }
+.hero-section .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #f0e4dae6 50%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+  }
+.hero-section .hero-text h1, .hero-text h5, .hero-text p {
+    color: #6b2c2c;
+  }
+.hero-section .btn{
+    background-color:#124D1C;
+    color: #fff;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+.hero-section .btn:hover{
+    transform: scale(1.1);
+    border: 2px solid #124D1C;
+    color: #124D1C;
+}
