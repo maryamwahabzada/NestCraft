@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+
+/* Smooth background change */
+
+#mainNavbar {
+    transition: background-color 0.5s ease;
+}
+nav .nav-link{
+    color: rgb(2, 0, 9);
+}
+
+
+/* After scrolling more than 150px */
+
+#mainNavbar.scrolled {
+    background-color: #0b1849a0 !important;
+    color: white;
+}
+#mainNavbar.scrolled .nav-link{
+    color: white;
+}
+
+/* navbar end */
+
+/* hero section */
+
+.installment-banner {
+      background-color: #6b2c2c;
+      color: #fff;
+      border-radius: .25rem;
+    }
