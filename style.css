@@ -62,3 +62,13 @@ nav .nav-link{
     border: 2px solid #124D1C;
     color: #124D1C;
 }
+
+/* start section countdown */
+ .countdown-section {
+    background-color: #6c2424;
+    letter-spacing: 5px;
+  }
+
+  small {
+    opacity: 0.8;
+  }
