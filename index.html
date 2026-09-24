@@ -17,130 +17,13 @@
 
 </head>
 
-<body>
-
-    <!-- Navbar -->
-    <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top "
-        id="mainNavbar"
-    >
-
-        <div class="container-fluid px-5">
-
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img
-                    src="images/logo.png"
-                    alt="Logo"
-                    width="80"
-                    height="60"
-                    class="img-fluid"
-                >
-            </a>
+ <body>
 
 
-            <!-- Mobile Button -->
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarContent"
-                aria-controls="navbarContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
 
-            <!-- Navbar Content -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-
-                <ul class="navbar-nav mr-5 gap-lg-3 ">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Home
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            About
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Home Office
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Decor
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Contact
-                        </a>
-                    </li>
-
-                </ul>
 
 
-                <!-- Search -->
-                <form class="d-flex gap-2 mt-3 mt-lg-0">
-
-                    <input
-                        type="search"
-                        class="form-control"
-                        placeholder="Search..."
-                        aria-label="Search"
-                    >
-
-                    <button
-                        type="submit"
-                        class="btn btn-success text-nowrap"
-                    >
-                        Search
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </nav>
-
-    <!-- hero section -->
-      <section class="hero-section">
-  <div class="hero-overlay">
-    <div class="hero-text">
-      <!-- <h5 class="text-uppercase fw-semibold">Luxury Furniture Collections  </h5> -->
-      <h1 class="display-4 fw-bold">Luxury Furniture Collections  </h1>
-      <p class="fw-medium border-top pt-2 mt-3"> Sofas | Beds | Dining | Decor</p>
-      <!-- <div class="installment-banner">Available on Monthly Installments</div> -->
-    <button class="btn"> learn more</button>
-
-    </div>
-  </div>
-</section>
-
-<!-- section countdown -->
-
-<section class="countdown-section text-center text-white py-4">
-  <h5 class="fw-semibold mb-3">SALE ENDS IN</h5>
-  <div id="countdown" class=" d-flex justify-content-center gap-4 fs-3 fw-bold my-4">
-    <div><span id="days">00</span><br><small>DAYS</small></div>
-    <div><span id="hours">00</span><br><small>HRS</small></div>
-    <div><span id="minutes">00</span><br><small>MINS</small></div>
-    <div><span id="seconds">00</span><br><small>SEC</small></div>
-  </div>
-</section>
 
 
 
@@ -163,63 +46,10 @@
     </script>
 
 
-    <!-- Navbar Scroll -->
-    <script>
-        window.addEventListener("scroll", function () {
-
-            const navbar = document.getElementById("mainNavbar");
-
-            if (window.scrollY > 150) {
-                navbar.classList.add("scrolled");
-            } else {
-                navbar.classList.remove("scrolled");
-            }
-
-        });
-    </script>
 
 
-<!-- countdown -->
-   
-<script>
-  // Initialize starting values
-  let days = 3;
-  let hours = 10;
-  let minutes = 7;
-  let seconds = 59;
 
-  function updateCountdown() {
-    document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
-    document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-    document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
-    document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-  }
-function tick() {
-    if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
-      clearInterval(timer);
-      document.getElementById("countdown").innerHTML = "SALE ENDED";
-      return;
-    }
 
-    seconds--;
-    if (seconds < 0) {
-      seconds = 59;
-      minutes--;
-      if (minutes < 0) {
-        minutes = 59;
-        hours--;
-        if (hours < 0) {
-          hours = 23;
-          days--;
-        }
-      }
-    }
-    updateCountdown();
-  }
-
-  updateCountdown();
-  const timer = setInterval(tick, 1000);
-</script>
 
 </body>
 
