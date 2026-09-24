@@ -20,7 +20,97 @@
  <body>
 
 
+        <!-- Navbar -->
+    <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top "
+        id="mainNavbar">
 
+        <div class="container-fluid px-5">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img
+                    src="images/logo.png"
+                    alt="Logo"
+                    width="80"
+                    height="60"
+                    class="img-fluid"
+                >
+            </a>
+
+
+            <!-- Mobile Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+
+                <ul class="navbar-nav mr-5 gap-lg-3 ">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Home Office
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Decor
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Search -->
+                <form class="d-flex gap-2 mt-3 mt-lg-0">
+
+                    <input
+                        type="search"
+                        class="form-control"
+                        placeholder="Search..."
+                        aria-label="Search"
+                    >
+
+                    <button
+                        type="submit"
+                        class="btn btn-success text-nowrap"
+                    >
+                        Search
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </nav>
 
 
 
@@ -45,6 +135,21 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
     </script>
 
+
+    <!-- Navbar Scroll -->
+    <script>
+        window.addEventListener("scroll", function () {
+
+            const navbar = document.getElementById("mainNavbar");
+
+            if (window.scrollY > 150) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+
+        });
+    </script>
 
 
 
