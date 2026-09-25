@@ -21,12 +21,12 @@ nav .nav-link{
 /* After scrolling more than 150px */
 
 #mainNavbar.scrolled {
-    background-color: #0b1849a0 !important;
-    color: white;
+    background-color:#f4f5f0d8;
 }
 #mainNavbar.scrolled .nav-link{
-    color: white;
+  color: #124D1C;
 }
+
 
 /* navbar end */
 
@@ -76,20 +76,20 @@ nav .nav-link{
 
 
 
-  .hover-card {
+.hover-card {
       position: relative;
       overflow: hidden;
       border-radius: 0.75rem;
       transition: transform 0.3s ease;
     }
 
-    .hover-card img {
+.hover-card img {
       width: 100%;
       height: 350px;
       transition: transform 0.5s ease, opacity 0.5s ease;
     }
 
-    .hover-overlay {
+.hover-overlay {
       position: absolute;
       inset: 0;
       background: rgba(8, 3, 52, 0.299);
@@ -102,7 +102,7 @@ nav .nav-link{
       padding: 1.25rem;
       text-align: center;
     }
-     .hover-card:hover img {
+.hover-card:hover img {
       transform: scale(1.05);
       opacity: 0.9;
     }
@@ -111,18 +111,76 @@ nav .nav-link{
       opacity: 1;
     }
 
-    .hover-overlay h6 {
+.hover-overlay h6 {
       color: #FFD700;
       font-weight: 600;
       letter-spacing: 1px;
     }
 
-    .hover-overlay h4 {
+.hover-overlay h4 {
       font-weight: 700;
       margin-top: 0.5rem;
     }
 
-    .hover-overlay p {
+.hover-overlay p {
       font-size: 0.9rem;
       opacity: 0.85;
     }
+
+ 
+    /* product scroll */
+.product-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.product-card {
+    flex: 0 0 auto;
+}
+
+.product-scroll img {
+    width: 400px;
+    height: 250px;
+}
+
+
+/* Mobile */
+@media (max-width: 578px) {
+
+    .product-scroll {
+        overflow-x: hidden;
+    }
+
+    .prodects {
+        display: flex;
+        flex-direction: column;
+        gap: 30px !important;
+    }
+
+    .prodects > .container {
+        width: 100%;
+    }
+    .product-scroll img {
+        width: 100%;
+        height:auto;
+        aspect-ratio: 400 / 250;
+        object-fit:fill;
+    }
+}
+
+
+
+.twins .left{
+  padding: 100px 50px 10px;
+  background-color:#6c2424;
+  color:#c8c8c3;
+}
+
+@media (max-width: 767px) {
+
+    .scroll-prodect {
+        padding-left: 0;
+        padding-right: 0;
+    }
+  }
