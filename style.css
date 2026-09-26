@@ -3,6 +3,7 @@
 
 .contact-section {
     background-image: url(images/photo1.jpg);
+    color: #fff;
 }
 
 
@@ -17,17 +18,14 @@
 }
 
 
-/* ================================
-   Contact Form
-================================ */
 
 .contact-form {
     height: 100%;
-    background-color: #ffffff;
+    background-color: #393838a4;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
+
 
 .contact-form h3,
 .contact-map h3 {
@@ -35,13 +33,11 @@
 }
 
 
-/* ================================
-   Form Inputs
-================================ */
 
 .contact-form .form-control {
     padding: 12px 15px;
     border-radius: 6px;
+    background-color: rgb(247, 243, 240);
 }
 
 .contact-form .form-control:focus {
@@ -56,7 +52,7 @@
 
 .contact-map {
     height: 100%;
-    background-color: #ffffff;
+    background-color: #393838a4;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
@@ -81,42 +77,6 @@
 }
 
 
-   /* Mobile */
-
-@media (max-width: 991.98px) {
-
-    .contact-title {
-        font-size: 2rem;
-    }
-
-    .contact-form,
-    .contact-map {
-        padding: 20px;
-    }
-
-    .map-container {
-        height: 350px;
-    }
-}
 
 
-@media (max-width: 575.98px) {
 
-    .contact-section {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .contact-title {
-        font-size: 1.8rem;
-    }
-
-    .contact-form,
-    .contact-map {
-        padding: 18px;
-    }
-
-    .map-container {
-        height: 300px;
-    }
-}
