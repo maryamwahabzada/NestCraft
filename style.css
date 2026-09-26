@@ -1,9 +1,8 @@
-/* ================================
-   Contact Section
-================================ */
+
+   /* Contact Section */
 
 .contact-section {
-    background-color: #f8f9fa;
+    background-image: url(images/photo1.jpg);
 }
 
 
@@ -82,9 +81,7 @@
 }
 
 
-/* ================================
-   Mobile
-================================ */
+   /* Mobile */
 
 @media (max-width: 991.98px) {
 
