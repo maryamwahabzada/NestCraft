@@ -73,7 +73,7 @@ nav .nav-link{
   }
   .countdown-section .countnumb{
     border: 1px solid rgba(133, 133, 133, 0.678) ;
-    padding: 20px 10px ;
+    padding: 20px 12px ;
     margin-bottom: 10px;
     border-radius: 5px;
     background-color: rgba(167, 165, 165, 0.147);
@@ -81,8 +81,7 @@ nav .nav-link{
 
 
 
-
-
+/* section cards */
 .hover-card {
       position: relative;
       overflow: hidden;
@@ -266,13 +265,12 @@ nav .nav-link{
 
 
 .menu-last li:hover a::after{
-  content:"Every NestCraft piece is more than furniture";
+  content:"🔵 Every NestCraft piece is more than furniture—is a story of comfort, beauty, and shaped to reflect your lifestyle and taste.";
   overflow: hidden;
 }
-/* .menu-last li:hover a{
+.menu-last li:hover a span{
   opacity: 0;
-} */
-
+}
 
 
 @font-face {
