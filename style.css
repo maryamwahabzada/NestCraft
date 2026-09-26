@@ -1,5 +1,5 @@
 
-   /* Contact Section */
+   /* Contact Section start */
 
 .contact-section {
     background-image: url(images/photo1.jpg);
@@ -7,17 +7,11 @@
 }
 
 
-/* ================================
-   Contact Title
-================================ */
-
 .contact-title {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
-
-
 
 .contact-form {
     height: 100%;
@@ -27,41 +21,19 @@
 }
 
 
-.contact-form h3,
-.contact-map h3 {
-    font-weight: 600;
-}
-
-
-
 .contact-form .form-control {
     padding: 12px 15px;
     border-radius: 6px;
     background-color: rgb(247, 243, 240);
 }
 
-.contact-form .form-control:focus {
-    box-shadow: none;
-    border-color: #198754;
-}
-
-
-/* ================================
-   Contact Map
-================================ */
-
 .contact-map {
     height: 100%;
     background-color: #393838a4;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); */
 }
-
-
-/* ================================
-   Map Container
-================================ */
 
 .map-container {
     width: 100%;
@@ -75,6 +47,7 @@
     height: 100%;
     border: 0;
 }
+/* contact section finish */
 
 
 
