@@ -1,0 +1,125 @@
+/* ================================
+   Contact Section
+================================ */
+
+.contact-section {
+    background-color: #f8f9fa;
+}
+
+
+/* ================================
+   Contact Title
+================================ */
+
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   Contact Form
+================================ */
+
+.contact-form {
+    height: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h3,
+.contact-map h3 {
+    font-weight: 600;
+}
+
+
+/* ================================
+   Form Inputs
+================================ */
+
+.contact-form .form-control {
+    padding: 12px 15px;
+    border-radius: 6px;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+    border-color: #198754;
+}
+
+
+/* ================================
+   Contact Map
+================================ */
+
+.contact-map {
+    height: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================
+   Map Container
+================================ */
+
+.map-container {
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* ================================
+   Mobile
+================================ */
+
+@media (max-width: 991.98px) {
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-form,
+    .contact-map {
+        padding: 20px;
+    }
+
+    .map-container {
+        height: 350px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+
+    .contact-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-form,
+    .contact-map {
+        padding: 18px;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+}
