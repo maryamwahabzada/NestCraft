@@ -95,11 +95,20 @@ nav .nav-link{
       height: 350px;
       transition: transform 0.5s ease, opacity 0.5s ease;
     }
-
+.hover-card a{
+      position: absolute;
+      z-index: 10;
+      color: rgb(243, 239, 239);
+      right: 15px;
+      top: 10px;
+      padding: 5px 8px;
+      background-color: rgba(209, 208, 208, 0.564);
+      border-radius: 50%;
+    }
 .hover-overlay {
       position: absolute;
       inset: 0;
-      background: rgba(8, 3, 52, 0.299);
+      background: rgba(50, 50, 50, 0.463);
       color: #fff;
       opacity: 0;
       transition: opacity 0.5s ease;
