@@ -14,26 +14,25 @@ body h2 {
 #mainNavbar {
     transition: background-color 0.5s ease;
 }
+
 nav .nav-link{
     color: #fff;
     font-weight: bold;
 }
 
-
-/* After scrolling more than 150px */
-
 #mainNavbar.scrolled {
     background-color:#ffffff;
     box-shadow: 1px 1px 15px gray;
 }
+
 #mainNavbar.scrolled .nav-link{
   color: #000000;
 }
+
 nav .nav-link:hover{
   transform: scale(1.2);
   color: #fff;
 }
-
 
 /* navbar end */
 
@@ -145,7 +144,6 @@ nav .nav-link:hover{
     }
 
 .hover-overlay p {
-      font-size: 0.9rem;
       opacity: 0.85;
     }
 
@@ -169,6 +167,18 @@ nav .nav-link:hover{
 
 /* Mobile */
 @media (max-width: 574px) {
+     nav ul li{
+    margin: 0 5px;}
+    #mainNavbar.scrolled .navbar-toggler{
+      background-color:#198754;
+
+    }
+    #mainNavbar.scrolled .navbar-toggler-icon{
+      padding: 16px;
+      font-size: 12px;
+
+    }
+
 
     .product-scroll {
         overflow-x: hidden;
@@ -190,21 +200,6 @@ nav .nav-link:hover{
         object-fit:fill;
     }
 }
-@media (max-width: 578px){
-  nav ul li{
-    margin: 0 5px;}
-    #mainNavbar.scrolled .navbar-toggler{
-      background-color:#198754;
-
-    }
-    #mainNavbar.scrolled .navbar-toggler-icon{
-      padding: 16px;
-      font-size: 12px;
-
-    }
-  }
-
-
 
 /* product-scroll finish */
 
