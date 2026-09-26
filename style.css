@@ -71,6 +71,13 @@ nav .nav-link{
   small {
     opacity: 0.8;
   }
+  .countdown-section .countnumb{
+    border: 1px solid rgba(133, 133, 133, 0.678) ;
+    padding: 20px 10px ;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgba(167, 165, 165, 0.147);
+  }
 
 
 
@@ -140,7 +147,7 @@ nav .nav-link{
 }
 
 .product-scroll img {
-    width: 400px;
+    width: 300px;
     height: 250px;
 }
 
