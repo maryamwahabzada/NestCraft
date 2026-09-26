@@ -29,7 +29,7 @@
     <div class="container position-relative z-2">
       <div class="row align-items-center min-vh-75">
         <div class="col-lg-7">
-          <span class="office-eyebrow"><i class="fa-solid fa-building"></i> NESTCRAFT OFFICE</span>
+          <!-- <span class="office-eyebrow"><i class="fa-solid fa-building"></i> NESTCRAFT OFFICE</span> -->
           <h1 class="office-hero__title">Work beautifully.<br><em>Think boldly.</em></h1>
           <p class="office-hero__text">
             Transform your workspace with furniture designed for focus, comfort and effortless style.
@@ -45,7 +45,7 @@
         </div>
         <div class="col-lg-5 d-none d-lg-block">
           <div class="office-hero-card">
-            <span>01</span>
+           
             <div>
               <small>DESIGNED FOR</small>
               <strong>Modern Work</strong>
@@ -58,7 +58,7 @@
     <div class="office-hero__scroll"><span>SCROLL</span><i class="fa-solid fa-arrow-down"></i></div>
   </section>
 
-  <!-- QUICK STATS -->
+  <!-- QUICK STATS
   <section class="office-stats">
     <div class="container">
       <div class="row g-0 text-center">
@@ -80,7 +80,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- INTRO -->
   <section class="office-intro py-5" id="office-showcase">
@@ -172,7 +172,7 @@
           <div class="carousel-item">
             <div class="row align-items-center g-0">
               <div class="col-lg-7">
-                <img src="https://images.unsplash.com/photo-1497366811364-6870744d04b2?auto=format&fit=crop&w=1300&q=88" class="office-carousel-img" alt="Executive office">
+                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=90" class="office-carousel-img" alt="Executive office">
               </div>
               <div class="col-lg-5">
                 <div class="office-carousel-copy">
@@ -414,7 +414,7 @@
 
 <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="office.js"></script>
+  
 
 
 
@@ -423,3 +423,119 @@
 
 </body>
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  // Animated counters
+  const counters = document.querySelectorAll("[data-office-count]");
+  const counterObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = Number(el.dataset.officeCount);
+      let current = 0;
+      const step = Math.max(1, Math.ceil(target / 45));
+
+      const tick = () => {
+        current += step;
+        if (current >= target) {
+          el.textContent = target;
+          return;
+        }
+        el.textContent = current;
+        requestAnimationFrame(tick);
+      };
+      tick();
+      observer.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => counterObserver.observe(counter));
+
+  // Product filtering
+  const filters = document.querySelectorAll("[data-office-filter]");
+  const products = document.querySelectorAll(".office-product");
+  const filterButtons = document.querySelectorAll(".office-filter");
+
+  function filterOfficeProducts(category) {
+    products.forEach(product => {
+      const match = category === "all" || product.dataset.officeCategory === category;
+      product.classList.toggle("office-hidden", !match);
+    });
+
+    filterButtons.forEach(button => {
+      button.classList.toggle("active", button.dataset.officeFilter === category);
+    });
+
+    const grid = document.getElementById("officeProductGrid");
+    if (grid) {
+      grid.animate(
+        [{ opacity: .45, transform: "translateY(8px)" }, { opacity: 1, transform: "translateY(0)" }],
+        { duration: 380, easing: "ease-out" }
+      );
+    }
+  }
+
+  filters.forEach(button => {
+    button.addEventListener("click", event => {
+      event.preventDefault();
+      const category = button.dataset.officeFilter;
+      filterOfficeProducts(category);
+
+      if (button.classList.contains("office-filter")) {
+        document.getElementById("office-products")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
+
+  // Wishlist interaction
+  document.querySelectorAll(".office-wishlist").forEach(button => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("is-liked");
+      const icon = button.querySelector("i");
+      icon.classList.toggle("fa-regular");
+      icon.classList.toggle("fa-solid");
+    });
+  });
+
+  // Quick-view modal
+  const modalElement = document.getElementById("officeQuickModal");
+  const modalTitle = document.getElementById("officeModalTitle");
+
+  if (modalElement && window.bootstrap) {
+    const quickModal = new bootstrap.Modal(modalElement);
+
+    document.querySelectorAll("[data-office-modal]").forEach(button => {
+      button.addEventListener("click", () => {
+        modalTitle.textContent = button.dataset.officeModal;
+        quickModal.show();
+      });
+    });
+  }
+
+  // Newsletter demo
+  const newsletter = document.getElementById("officeNewsletter");
+  if (newsletter) {
+    newsletter.addEventListener("submit", event => {
+      event.preventDefault();
+      const button = newsletter.querySelector("button");
+      button.innerHTML = 'Subscribed <i class="fa-solid fa-check ms-1"></i>';
+      button.disabled = true;
+    });
+  }
+
+  // Small parallax effect for hero image
+  const hero = document.querySelector(".office-hero");
+  if (hero && window.matchMedia("(min-width: 992px)").matches) {
+    hero.addEventListener("mousemove", event => {
+      const x = (event.clientX / window.innerWidth - 0.5) * 10;
+      const y = (event.clientY / window.innerHeight - 0.5) * 6;
+      hero.style.backgroundPosition = `calc(50% + ${x}px) calc(50% + ${y}px)`;
+    });
+    hero.addEventListener("mouseleave", () => {
+      hero.style.backgroundPosition = "center";
+    });
+  }
+});
+
+</script>
