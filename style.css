@@ -59,3 +59,1128 @@ img {
 /* =====================================================
    COLOR VARIABLES END
 ===================================================== */
+
+
+
+/* =====================================================
+   NAVBAR START
+===================================================== */
+
+.luxury-navbar {
+    min-height: 82px;
+    background: var(--cream);
+    border-bottom: 1px solid rgba(112, 40, 40, 0.12);
+    box-shadow: 0 5px 25px rgba(59, 37, 33, 0.07);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    transition: 0.4s ease;
+}
+
+.luxury-navbar:hover {
+    box-shadow: 0 8px 30px rgba(59, 37, 33, 0.13);
+}
+
+
+/* ================= LOGO START ================= */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--wine);
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-brand:hover {
+    color: var(--wine);
+}
+
+.logo-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--wine);
+    color: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 0 8px 20px rgba(112, 40, 40, 0.25);
+    transition: 0.4s ease;
+}
+
+.navbar-brand:hover .logo-circle {
+    transform: rotate(-10deg) scale(1.08);
+    background: var(--gold);
+    color: var(--wine);
+}
+
+/* ================= LOGO END ================= */
+
+
+/* ================= NAV LINKS START ================= */
+
+.navbar-nav {
+    gap: 8px;
+}
+
+.nav-link {
+    position: relative;
+    color: var(--brown) !important;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px !important;
+    transition: 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--wine) !important;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: calc(100% - 30px);
+}
+
+.nav-link.active {
+    color: var(--wine) !important;
+    font-weight: 600;
+}
+
+/* ================= NAV LINKS END ================= */
+
+
+/* ================= SEARCH START ================= */
+
+.search-area {
+    margin-left: 15px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 190px;
+    height: 42px;
+    border: 1px solid rgba(112, 40, 40, 0.18);
+    border-radius: 30px;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.search-box:focus-within {
+    width: 220px;
+    border-color: var(--gold);
+    box-shadow: 0 5px 20px rgba(217, 165, 46, 0.18);
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 14px;
+    background: transparent;
+    color: var(--brown);
+    font-size: 12px;
+}
+
+.search-box input::placeholder {
+    color: #9c8b84;
+}
+
+.search-box button {
+    width: 45px;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: var(--wine);
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.search-box button:hover {
+    color: var(--gold);
+    transform: scale(1.1);
+}
+
+/* ================= SEARCH END ================= */
+
+
+/* ================= TOGGLER START ================= */
+
+.navbar-toggler {
+    border: 1px solid var(--wine);
+    padding: 7px 10px;
+    color: var(--wine);
+    box-shadow: none !important;
+}
+
+.navbar-toggler i {
+    font-size: 23px;
+}
+
+/* ================= TOGGLER END ================= */
+
+/* =====================================================
+   NAVBAR END
+===================================================== */
+
+
+
+/* =====================================================
+   HERO START
+===================================================== */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 670px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 7s ease;
+}
+
+.carousel-item.active > img {
+    transform: scale(1.06);
+}
+
+.hero-dark {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(35, 16, 14, 0.78),
+            rgba(35, 16, 14, 0.32),
+            rgba(35, 16, 14, 0.05)
+        );
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    transform: translateY(-50%);
+    max-width: 650px;
+    color: var(--white);
+    z-index: 5;
+    animation: heroText 1.2s ease;
+}
+
+.hero-content small {
+    display: inline-block;
+    color: var(--gold-light);
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.hero-content h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 1.05;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.hero-content h1 span {
+    color: var(--gold-light);
+}
+
+.hero-content p {
+    max-width: 500px;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #f4ece6;
+    margin-bottom: 30px;
+}
+
+
+/* ================= GOLD BUTTON START ================= */
+
+.gold-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+    padding: 14px 28px;
+    background: var(--gold);
+    color: var(--wine-dark);
+    border: 1px solid var(--gold);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.gold-btn i {
+    transition: 0.3s ease;
+}
+
+.gold-btn:hover {
+    background: transparent;
+    color: var(--gold-light);
+    border-color: var(--gold-light);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.gold-btn:hover i {
+    transform: translateX(6px);
+}
+
+/* ================= GOLD BUTTON END ================= */
+
+
+/* ================= CAROUSEL BUTTONS START ================= */
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 70px;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.hero:hover .carousel-control-prev,
+.hero:hover .carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(217, 165, 46, 0.85);
+    background-size: 45%;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: var(--wine);
+}
+
+/* ================= CAROUSEL BUTTONS END ================= */
+
+
+/* ================= INDICATORS START ================= */
+
+.carousel-indicators {
+    bottom: 25px;
+    z-index: 8;
+}
+
+.carousel-indicators button {
+    width: 28px;
+    height: 3px;
+    border: none;
+    margin: 0 5px;
+    background-color: #fff;
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    width: 55px;
+    background-color: var(--gold);
+    opacity: 1;
+}
+
+/* ================= INDICATORS END ================= */
+
+
+/* ================= HERO ANIMATION START ================= */
+
+@keyframes heroText {
+
+    from {
+        opacity: 0;
+        transform: translateY(-40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
+
+/* ================= HERO ANIMATION END ================= */
+
+/* =====================================================
+   HERO END
+===================================================== */
+
+
+
+/* =====================================================
+   COLLECTION TITLE START
+===================================================== */
+
+.collection-title {
+    padding: 90px 0 55px;
+    background: var(--cream);
+}
+
+.collection-title span {
+    display: block;
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.collection-title h2 {
+    color: var(--wine);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(34px, 4vw, 50px);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.collection-title p {
+    max-width: 650px;
+    margin: auto;
+    color: #806d65;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* =====================================================
+   COLLECTION TITLE END
+===================================================== */
+
+
+
+/* =====================================================
+   PRODUCTS START
+===================================================== */
+
+.products {
+    padding: 20px 0 100px;
+    background: var(--cream);
+}
+
+
+/* ================= PRODUCT CARD START ================= */
+
+.product-card {
+    position: relative;
+    background: var(--white);
+    border: none;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: var(--shadow);
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-hover);
+}
+
+
+/* ================= PRODUCT IMAGE START ================= */
+
+.product-img {
+    position: relative;
+    height: 310px;
+    overflow: hidden;
+    background: var(--cream-dark);
+}
+
+.product-img img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition:
+        opacity 0.6s ease,
+        transform 0.7s ease;
+}
+
+
+/* First image */
+
+.product-img .image-one {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* Second image */
+
+.product-img .image-two {
+    opacity: 0;
+    transform: scale(1.08);
+}
+
+
+/* HOVER IMAGE CHANGE */
+
+.product-card:hover .image-one {
+    opacity: 0;
+    transform: scale(1.08);
+}
+
+.product-card:hover .image-two {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ================= PRODUCT IMAGE END ================= */
+
+
+/* ================= BADGE START ================= */
+
+.badge-custom {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 5;
+    padding: 7px 13px;
+    background: var(--wine);
+    color: white;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge-custom.sale {
+    background: var(--gold);
+    color: var(--wine-dark);
+}
+
+/* ================= BADGE END ================= */
+
+
+/* ================= HEART START ================= */
+
+.heart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 39px;
+    height: 39px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--wine);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    z-index: 6;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover .heart {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.heart:hover {
+    background: var(--wine);
+    color: white;
+    transform: scale(1.12) !important;
+}
+
+/* ================= HEART END ================= */
+
+
+/* ================= PRODUCT INFO START ================= */
+
+.product-info {
+    padding: 22px 20px 23px;
+}
+
+.product-info small {
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.product-info h3 {
+    color: var(--wine);
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    margin: 7px 0 8px;
+    transition: 0.3s ease;
+}
+
+.product-card:hover .product-info h3 {
+    color: var(--gold);
+}
+
+.product-info p {
+    color: #87756d;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+/* ================= PRODUCT INFO END ================= */
+
+
+/* ================= PRICE ROW START ================= */
+
+.price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.price {
+    color: var(--wine);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.old-price {
+    color: #aaa;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+/* ================= PRICE ROW END ================= */
+
+
+/* ================= BAG BUTTON START ================= */
+
+.bag {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: var(--wine);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+
+.bag:hover {
+    background: var(--gold);
+    color: var(--wine);
+    transform: rotate(-8deg) scale(1.1);
+    box-shadow: 0 8px 20px rgba(217, 165, 46, 0.3);
+}
+
+/* ================= BAG BUTTON END ================= */
+
+/* =====================================================
+   PRODUCTS END
+===================================================== */
+
+
+
+/* =====================================================
+   BOTTOM BANNER START
+===================================================== */
+
+.bottom-banner {
+    position: relative;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(63, 25, 24, 0.96),
+            rgba(112, 40, 40, 0.85)
+        ),
+        url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=90")
+        center / cover;
+    overflow: hidden;
+}
+
+.bottom-banner::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgba(217, 165, 46, 0.3);
+    border-radius: 50%;
+    right: -100px;
+    top: -100px;
+}
+
+.bottom-banner::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 1px solid rgba(217, 165, 46, 0.2);
+    border-radius: 50%;
+    right: 40px;
+    bottom: -100px;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+    color: white;
+}
+
+.banner-content small {
+    color: var(--gold-light);
+    letter-spacing: 4px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.banner-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.1;
+    margin: 18px 0;
+}
+
+.banner-content p {
+    max-width: 550px;
+    color: #eaded8;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 28px;
+}
+
+/* =====================================================
+   BOTTOM BANNER END
+===================================================== */
+
+
+
+/* =====================================================
+   CARD REVEAL ANIMATION START
+===================================================== */
+
+.product-card {
+    animation: cardReveal 0.8s ease both;
+}
+
+.product-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.product-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.product-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.product-card:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.product-card:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.product-card:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.product-card:nth-child(7) {
+    animation-delay: 0.35s;
+}
+
+.product-card:nth-child(8) {
+    animation-delay: 0.4s;
+}
+
+@keyframes cardReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================================
+   CARD REVEAL ANIMATION END
+===================================================== */
+
+
+
+/* =====================================================
+   LARGE TABLET RESPONSIVE START
+===================================================== */
+
+@media (max-width: 1199px) {
+
+    .navbar-nav {
+        gap: 0;
+    }
+
+    .nav-link {
+        padding: 10px 10px !important;
+    }
+
+    .search-area {
+        margin-left: 5px;
+    }
+
+    .search-box {
+        width: 160px;
+    }
+
+    .search-box:focus-within {
+        width: 180px;
+    }
+
+    .carousel-item {
+        height: 600px;
+    }
+
+    .product-img {
+        height: 280px;
+    }
+
+}
+
+/* =====================================================
+   LARGE TABLET RESPONSIVE END
+===================================================== */
+
+
+
+/* =====================================================
+   TABLET RESPONSIVE START
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .luxury-navbar {
+        min-height: 72px;
+    }
+
+    .navbar-collapse {
+        background: var(--cream);
+        margin-top: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+    }
+
+    .navbar-nav {
+        align-items: flex-start !important;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 12px 8px !important;
+    }
+
+    .nav-link::after {
+        left: 8px;
+    }
+
+    .search-area {
+        width: 100%;
+        margin: 10px 0 0;
+    }
+
+    .search-box,
+    .search-box:focus-within {
+        width: 100%;
+    }
+
+    .carousel-item {
+        height: 550px;
+    }
+
+    .hero-content {
+        left: 7%;
+        right: 7%;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+
+    .product-img {
+        height: 300px;
+    }
+
+}
+
+/* =====================================================
+   TABLET RESPONSIVE END
+===================================================== */
+
+
+
+/* =====================================================
+   MOBILE RESPONSIVE START
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .logo-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+    }
+
+    .carousel-item {
+        height: 520px;
+    }
+
+    .hero-dark {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(35, 16, 14, 0.8),
+                rgba(35, 16, 14, 0.45)
+            );
+    }
+
+    .hero-content {
+        left: 25px;
+        right: 25px;
+    }
+
+    .hero-content small {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content h1 {
+        font-size: 43px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 45px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .collection-title {
+        padding: 65px 20px 40px;
+    }
+
+    .collection-title h2 {
+        font-size: 35px;
+    }
+
+    .products {
+        padding-bottom: 70px;
+    }
+
+    .product-img {
+        height: 340px;
+    }
+
+    .heart {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .bottom-banner {
+        min-height: 450px;
+        padding: 70px 20px;
+    }
+
+    .banner-content h2 {
+        font-size: 42px;
+    }
+
+}
+
+/* =====================================================
+   MOBILE RESPONSIVE END
+===================================================== */
+
+
+
+/* =====================================================
+   SMALL MOBILE RESPONSIVE START
+===================================================== */
+
+@media (max-width: 575px) {
+
+    .luxury-navbar {
+        min-height: 68px;
+    }
+
+    .navbar-brand {
+        font-size: 19px;
+        letter-spacing: 1.5px;
+    }
+
+    .logo-circle {
+        width: 37px;
+        height: 37px;
+    }
+
+    .carousel-item {
+        height: 500px;
+    }
+
+    .hero-content {
+        left: 20px;
+        right: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+        max-width: 350px;
+    }
+
+    .gold-btn {
+        padding: 12px 20px;
+        font-size: 11px;
+    }
+
+    .collection-title h2 {
+        font-size: 31px;
+    }
+
+    .collection-title p {
+        font-size: 12px;
+    }
+
+    .product-img {
+        height: 300px;
+    }
+
+    .product-info {
+        padding: 20px 17px;
+    }
+
+    .product-info h3 {
+        font-size: 19px;
+    }
+
+    .bottom-banner {
+        min-height: 420px;
+    }
+
+    .banner-content h2 {
+        font-size: 36px;
+    }
+
+    .banner-content p {
+        font-size: 12px;
+    }
+
+}
+
+/* =====================================================
+   SMALL MOBILE RESPONSIVE END
+===================================================== */
+
+
+
+/* =====================================================
+   HOVER EFFECT FOR DESKTOP START
+===================================================== */
+
+@media (min-width: 992px) {
+
+    .product-img::after {
+        content: "VIEW PRODUCT";
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translate(-50%, 20px);
+        padding: 9px 18px;
+        background: rgba(112, 40, 40, 0.92);
+        color: var(--gold-light);
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        opacity: 0;
+        transition: 0.4s ease;
+        z-index: 4;
+    }
+
+    .product-card:hover .product-img::after {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+}
+
+/* =====================================================
+   HOVER EFFECT FOR DESKTOP END
+===================================================== */
+
+
+
+/* =====================================================
+   SELECTION START
+===================================================== */
+
+::selection {
+    background: var(--wine);
+    color: var(--gold-light);
+}
+
+/* =====================================================
+   SELECTION END
+===================================================== */
