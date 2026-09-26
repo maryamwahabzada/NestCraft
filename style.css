@@ -1,0 +1,61 @@
+/* =====================================================
+   GLOBAL START
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f7f3ee;
+    color: #3b2521;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =====================================================
+   GLOBAL END
+===================================================== */
+
+
+
+/* =====================================================
+   COLOR VARIABLES START
+===================================================== */
+
+:root {
+    --wine: #702828;
+    --wine-dark: #4d1d1d;
+    --wine-light: #8c3d3d;
+
+    --gold: #d9a52e;
+    --gold-light: #f0c65a;
+
+    --cream: #f7f3ee;
+    --cream-dark: #eee5dc;
+
+    --brown: #3b2521;
+    --white: #ffffff;
+
+    --shadow: 0 15px 40px rgba(77, 29, 29, 0.12);
+    --shadow-hover: 0 25px 55px rgba(77, 29, 29, 0.22);
+}
+
+/* =====================================================
+   COLOR VARIABLES END
+===================================================== */
