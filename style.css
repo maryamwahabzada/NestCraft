@@ -273,7 +273,6 @@ nav .nav-link:hover{
 
 .menu-last li:hover a::after{
   content:"🔵 Every NestCraft piece is more than furniture—is a story of comfort, beauty, and shaped to reflect your lifestyle and taste.";
-  overflow: hidden;
 }
 .menu-last li:hover a span{
   opacity: 0;
