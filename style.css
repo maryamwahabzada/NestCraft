@@ -23,10 +23,15 @@ nav .nav-link{
 /* After scrolling more than 150px */
 
 #mainNavbar.scrolled {
-    background-color:#f4f5f0d8;
+    background-color:#ffffff;
+    box-shadow: 1px 1px 15px gray;
 }
 #mainNavbar.scrolled .nav-link{
-  color: #124D1C;
+  color: #000000;
+}
+nav .nav-link:hover{
+  transform: scale(1.2);
+  color: #fff;
 }
 
 
@@ -192,7 +197,7 @@ nav .nav-link{
 .twins .left{
   padding: 100px 50px 10px;
   background-color:#6c2424;
-  color:#c8c8c3;
+  color: #ffffff;
 }
 .twins .triples{
   height: 500px;
