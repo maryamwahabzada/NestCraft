@@ -168,7 +168,7 @@ nav .nav-link:hover{
 
 
 /* Mobile */
-@media (max-width: 578px) {
+@media (max-width: 574px) {
 
     .product-scroll {
         overflow-x: hidden;
@@ -190,6 +190,21 @@ nav .nav-link:hover{
         object-fit:fill;
     }
 }
+@media (max-width: 578px){
+  nav ul li{
+    margin: 0 5px;}
+    #mainNavbar.scrolled .navbar-toggler{
+      background-color:#198754;
+
+    }
+    #mainNavbar.scrolled .navbar-toggler-icon{
+      padding: 16px;
+      font-size: 12px;
+
+    }
+  }
+
+
 
 /* product-scroll finish */
 
@@ -303,3 +318,4 @@ nav .nav-link:hover{
   font-weight: 700;
   src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
 }
+
