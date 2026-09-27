@@ -315,53 +315,6 @@
 
                             <img
                                 class="about-image-one"
-                                src="images/photo17.jpg"
-                            >
-
-                            <img
-                                class="about-image-two"
-                                src="images/photo16.jpg"
-                                alt="Arco table alternate view"
-                            >
-
-                            <button class="about-heart">
-                                <i class="bi bi-heart"></i>
-                            </button>
-
-                        </div>
-
-                        <div class="about-product-info">
-
-                            <div>
-                                <h4>
-                                    ARCO TABLE
-                                </h4>
-
-                                <span>
-                                    Solid Walnut
-                                </span>
-                            </div>
-
-                            <strong>
-                                $860
-                            </strong>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- CARD 3 -->
-
-                <div class="col-lg-3 col-md-6">
-
-                    <div class="about-product-card">
-
-                        <div class="about-product-image">
-
-                            <img
-                                class="about-image-one"
                                 src="images/photo18.jpg"
                             >
 
@@ -391,6 +344,52 @@
 
                             <strong>
                                 $940
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <!-- CARD 3 -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="about-product-card">
+
+                        <div class="about-product-image">
+
+                            <img
+                                class="about-image-one"
+                                src="images/photo17.jpg"
+                            >
+
+                            <img
+                                class="about-image-two"
+                                src="images/photo16.jpg"
+                                alt="Arco table alternate view"
+                            >
+
+                            <button class="about-heart">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="about-product-info">
+
+                            <div>
+                                <h4>
+                                    ARCO TABLE
+                                </h4>
+
+                                <span>
+                                    Solid Walnut
+                                </span>
+                            </div>
+
+                            <strong>
+                                $860
                             </strong>
 
                         </div>
@@ -457,32 +456,136 @@
          SHOP BY SPACE
     =============================== -->
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/photo15.jpg" class="d-block w-100" alt="...">
+   <section class="about-theme-carousel">
+
+    <div class="about-theme-header">
+        <h2>Theme</h2>
+
+        <div class="about-theme-counter">
+            <span id="aboutCurrentSlide">06</span>
+            <small>/12</small>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="images/photo3.jpg" class="d-block w-100" alt="...">
+
+
+    <div class="about-carousel-wrapper">
+
+        <!-- LEFT ARROW -->
+        <button
+            class="about-carousel-arrow about-carousel-prev"
+            id="aboutPrev"
+            type="button"
+        >
+            <i class="bi bi-chevron-left"></i>
+        </button>
+
+
+        <!-- CAROUSEL -->
+        <div class="about-carousel-track" id="aboutCarouselTrack">
+
+            <!-- CARD 1 -->
+            <div class="about-theme-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=85"
+                    alt="Bloom"
+                >
+
+                <div class="about-theme-overlay">
+                    <h3>bloom</h3>
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="about-theme-card about-theme-card-active">
+
+                <img
+                    src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1000&q=85"
+                    alt="Vivid"
+                >
+
+                <div class="about-theme-overlay">
+                    <h3>vivid</h3>
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="about-theme-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1495231916356-a86217efff12?auto=format&fit=crop&w=800&q=85"
+                    alt="Petal"
+                >
+
+                <div class="about-theme-overlay">
+                    <h3>petaled</h3>
+                </div>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+            <div class="about-theme-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=85"
+                    alt="Nature"
+                >
+
+                <div class="about-theme-overlay">
+                    <h3>nature</h3>
+                </div>
+
+            </div>
+
+
+            <!-- CARD 5 -->
+            <div class="about-theme-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=85"
+                    alt="Garden"
+                >
+
+                <div class="about-theme-overlay">
+                    <h3>garden</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT ARROW -->
+        <button
+            class="about-carousel-arrow about-carousel-next"
+            id="aboutNext"
+            type="button"
+        >
+            <i class="bi bi-chevron-right"></i>
+        </button>
+
     </div>
-    <div class="carousel-item">
-      <img src="images/photo1.jpg" class="d-block w-100" alt="...">
+
+
+    <!-- DOTS -->
+
+    <div class="about-carousel-dots" id="aboutCarouselDots">
+
+        <button class="about-dot"></button>
+        <button class="about-dot about-dot-active"></button>
+        <button class="about-dot"></button>
+        <button class="about-dot"></button>
+        <button class="about-dot"></button>
+
     </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+
+</section>
+
 
     <!-- ==============================
          NUMBERS
@@ -572,6 +675,195 @@
 
  <!-- javasscript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const track = document.getElementById("aboutCarouselTrack");
+    const cards = document.querySelectorAll(".about-theme-card");
+    const dots = document.querySelectorAll(".about-dot");
+
+    const prevButton = document.getElementById("aboutPrev");
+    const nextButton = document.getElementById("aboutNext");
+
+    const currentSlide =
+        document.getElementById("aboutCurrentSlide");
+
+    let currentIndex = 1;
+
+    function updateCarousel() {
+
+        cards.forEach((card, index) => {
+
+            card.classList.remove(
+                "about-theme-card-active"
+            );
+
+            if (index === currentIndex) {
+
+                card.classList.add(
+                    "about-theme-card-active"
+                );
+
+            }
+
+        });
+
+
+        dots.forEach((dot, index) => {
+
+            dot.classList.remove(
+                "about-dot-active"
+            );
+
+            if (index === currentIndex) {
+
+                dot.classList.add(
+                    "about-dot-active"
+                );
+
+            }
+
+        });
+
+
+        /*
+            Update number
+        */
+
+        let number =
+            String(currentIndex + 1).padStart(2, "0");
+
+        currentSlide.textContent = number;
+
+
+        /*
+            Move carousel
+        */
+
+        const activeCard = cards[currentIndex];
+
+        const trackWidth = track.offsetWidth;
+
+        const cardCenter =
+            activeCard.offsetLeft +
+            activeCard.offsetWidth / 2;
+
+        const move =
+            cardCenter -
+            trackWidth / 2;
+
+        track.scrollTo({
+
+            left: move,
+
+            behavior: "smooth"
+
+        });
+
+    }
+
+
+    /* NEXT */
+
+    nextButton.addEventListener("click", function () {
+
+        currentIndex++;
+
+        if (currentIndex >= cards.length) {
+            currentIndex = 0;
+        }
+
+        updateCarousel();
+
+    });
+
+
+    /* PREVIOUS */
+
+    prevButton.addEventListener("click", function () {
+
+        currentIndex--;
+
+        if (currentIndex < 0) {
+            currentIndex = cards.length - 1;
+        }
+
+        updateCarousel();
+
+    });
+
+
+    /* DOT CLICK */
+
+    dots.forEach((dot, index) => {
+
+        dot.addEventListener("click", function () {
+
+            currentIndex = index;
+
+            updateCarousel();
+
+        });
+
+    });
+
+
+    /*
+        AUTO PLAY
+    */
+
+    let autoplay = setInterval(function () {
+
+        currentIndex++;
+
+        if (currentIndex >= cards.length) {
+            currentIndex = 0;
+        }
+
+        updateCarousel();
+
+    }, 4500);
+
+
+    /*
+        Pause when mouse is over carousel
+    */
+
+    track.addEventListener("mouseenter", function () {
+        clearInterval(autoplay);
+    });
+
+
+    track.addEventListener("mouseleave", function () {
+
+        autoplay = setInterval(function () {
+
+            currentIndex++;
+
+            if (currentIndex >= cards.length) {
+                currentIndex = 0;
+            }
+
+            updateCarousel();
+
+        }, 4500);
+
+    });
+
+
+    /*
+        Initial position
+    */
+
+    setTimeout(function () {
+        updateCarousel();
+    }, 100);
+
+});
+</script>
+
 
 </body>
 
