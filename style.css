@@ -34,13 +34,12 @@ nav .nav-link:hover{
   color: #fff;
 }
 
-/* navbar end */
 
 /* hero section */
 .hero-section {
     position: relative;
     height: 100vh;
-    background: url('images/photo6.png') center/cover no-repeat;
+    background: url('images/hp6.png') center/cover no-repeat;
   }
 
 .hero-section .hero-overlay {
