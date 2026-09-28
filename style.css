@@ -30,6 +30,7 @@ body h2 {
 
 #mainNavbar.scrolled .nav-link{
   color: #000000;
+  font-weight: bold;
 }
 
  nav .nav-link:hover{
