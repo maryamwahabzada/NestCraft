@@ -1,3 +1,4 @@
+/* home start */
 *{
     margin: 0;
     padding: 0;
@@ -39,7 +40,7 @@ nav .nav-link:hover{
 .hero-section {
     position: relative;
     height: 100vh;
-    background: url('images/hp6.png') center/cover no-repeat;
+    background: url('images/photo6.png') center/cover no-repeat;
   }
 
 .hero-section .hero-overlay {
