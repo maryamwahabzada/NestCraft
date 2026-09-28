@@ -14,16 +14,402 @@
      <!-- bootstrap icon -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+      <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
 
 </head>
+<body class="office-page">
 
-<body>
+    <!-- OFFICE HERO -->
+  <section class="office-hero">
+    <div class="office-hero__overlay"></div>
+    <div class="container position-relative z-2">
+      <div class="row align-items-center min-vh-75">
+        <div class="col-lg-7">
+          <!-- <span class="office-eyebrow"><i class="fa-solid fa-building"></i> NESTCRAFT OFFICE</span> -->
+          <h1 class="office-hero__title">Work beautifully.<br><em>Think boldly.</em></h1>
+          <p class="office-hero__text">
+            Transform your workspace with furniture designed for focus, comfort and effortless style.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#office-products" class="btn office-btn office-btn--gold">
+              Explore Collection <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+            <a href="#office-showcase" class="btn office-btn office-btn--glass">
+              View Spaces <i class="fa-solid fa-play ms-2"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="office-hero-card">
+           
+            <div>
+              <small>DESIGNED FOR</small>
+              <strong>Modern Work</strong>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="office-hero__scroll"><span>SCROLL</span><i class="fa-solid fa-arrow-down"></i></div>
+  </section>
+
+  <!-- QUICK STATS
+  <section class="office-stats">
+    <div class="container">
+      <div class="row g-0 text-center">
+        <div class="col-6 col-lg-3 office-stat">
+          <i class="fa-solid fa-chair"></i>
+          <strong data-office-count="120">0</strong><span>+ Designs</span>
+        </div>
+        <div class="col-6 col-lg-3 office-stat">
+          <i class="fa-solid fa-layer-group"></i>
+          <strong data-office-count="18">0</strong><span> Collections</span>
+        </div>
+        <div class="col-6 col-lg-3 office-stat">
+          <i class="fa-solid fa-leaf"></i>
+          <strong data-office-count="70">0</strong><span>% Sustainable</span>
+        </div>
+        <div class="col-6 col-lg-3 office-stat">
+          <i class="fa-solid fa-headset"></i>
+          <strong>24/7</strong><span> Support</span>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- INTRO -->
+  <section class="office-intro py-5" id="office-showcase">
+    <div class="container py-lg-5">
+      <div class="row align-items-end g-4">
+        <div class="col-lg-7">
+          <span class="office-kicker">THE OFFICE EDIT</span>
+          <h2 class="office-section-title">Your workspace,<br><span>reimagined.</span></h2>
+        </div>
+        <div class="col-lg-5">
+          <p class="office-muted mb-0">
+            From the first sketch to the final detail, every piece is made to bring calm,
+            character and productivity into the places where ideas happen.
+          </p>
+        </div>
+      </div>
+
+       <!-- Horizontal category cards -->
+      <div class="row g-3 mt-4">
+        <div class="col-md-4">
+          <a class="office-category-card" href="#office-products" data-office-filter="desks">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="Modern office desks">
+            <div class="office-category-card__content">
+              <span>01</span><h3>Desks</h3><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="office-category-card" href="#office-products" data-office-filter="chairs">
+            <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?auto=format&fit=crop&w=900&q=85" alt="Office chair">
+            <div class="office-category-card__content">
+              <span>02</span><h3>Seating</h3><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="office-category-card" href="#office-products" data-office-filter="storage">
+            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=900&q=85" alt="Office workspace and storage">
+            <div class="office-category-card__content">
+              <span>03</span><h3>Storage</h3><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SHOWCASE CAROUSEL -->
+  <section class="office-showcase py-5">
+    <div class="container py-lg-5">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <span class="office-kicker">SPACES IN FOCUS</span>
+          <h2 class="office-section-title mb-0">Built around <span>your day.</span></h2>
+        </div>
+        <div class="office-carousel-controls d-none d-md-flex">
+          <button class="office-circle-btn" type="button" data-bs-target="#officeCarousel" data-bs-slide="prev" aria-label="Previous">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="office-circle-btn office-circle-btn--dark" type="button" data-bs-target="#officeCarousel" data-bs-slide="next" aria-label="Next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="officeCarousel" class="carousel slide office-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row align-items-center g-0">
+              <div class="col-lg-7">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1300&q=88" class="office-carousel-img" alt="Open plan office">
+              </div>
+              <div class="col-lg-5">
+                <div class="office-carousel-copy">
+                  <span>01 / OPEN PLAN</span>
+                  <h3>Room for ideas to breathe.</h3>
+                  <p>Flexible desks, warm textures and smart storage create a space that can change with your team.</p>
+                  <a href="#office-products">Explore open-plan essentials <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row align-items-center g-0">
+              <div class="col-lg-7">
+                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=90" class="office-carousel-img" alt="Executive office">
+              </div>
+              <div class="col-lg-5">
+                <div class="office-carousel-copy">
+                  <span>02 / EXECUTIVE</span>
+                  <h3>Quiet confidence.</h3>
+                  <p>Refined materials and ergonomic seating bring a sophisticated feel to focused work.</p>
+                  <a href="#office-products">Shop executive pieces <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row align-items-center g-0">
+              <div class="col-lg-7">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1300&q=88" class="office-carousel-img" alt="Creative office">
+              </div>
+              <div class="col-lg-5">
+                <div class="office-carousel-copy">
+                  <span>03 / CREATIVE</span>
+                  <h3>Designed to collaborate.</h3>
+                  <p>Make meetings, brainstorming and everyday work feel more natural with flexible furniture.</p>
+                  <a href="#office-products">Discover collaborative furniture <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- PRODUCTS -->
+  <section class="office-products py-5" id="office-products">
+    <div class="container py-lg-5">
+      <div class="text-center mb-4">
+        <span class="office-kicker">SHOP OFFICE</span>
+        <h2 class="office-section-title">Pieces with <span>purpose.</span></h2>
+        <p class="office-muted mx-auto office-max-600">Choose a category and discover furniture made for productive, beautiful spaces.</p>
+      </div>
+
+      <div class="office-filter-bar">
+        <button class="office-filter active" data-office-filter="all">All</button>
+        <button class="office-filter" data-office-filter="desks"><i class="fa-solid fa-table"></i> Desks</button>
+        <button class="office-filter" data-office-filter="chairs"><i class="fa-solid fa-chair"></i> Chairs</button>
+        <button class="office-filter" data-office-filter="storage"><i class="fa-solid fa-box-archive"></i> Storage</button>
+        <button class="office-filter" data-office-filter="lighting"><i class="fa-regular fa-lightbulb"></i> Lighting</button>
+      </div>
+
+      <div class="row g-4" id="officeProductGrid">
+
+        <div class="col-sm-6 col-lg-4 office-product" data-office-category="desks">
+          <article class="office-product-card">
+            <div class="office-product-card__image">
+              <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=900&q=85" alt="Oak office desk">
+              <span class="office-badge">NEW</span>
+              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="office-quick" data-office-modal="Executive Oak Desk">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div class="office-product-card__body">
+              <small>DESKS / EXECUTIVE</small>
+              <h3>Executive Oak Desk</h3>
+              <div><strong>$895</strong><span>Solid oak / Walnut</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 office-product" data-office-category="chairs">
+          <article class="office-product-card">
+            <div class="office-product-card__image">
+              <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?auto=format&fit=crop&w=900&q=85" alt="Ergonomic office chair">
+              <span class="office-badge office-badge--dark">BESTSELLER</span>
+              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="office-quick" data-office-modal="Aero Ergonomic Chair">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div class="office-product-card__body">
+              <small>SEATING / ERGONOMIC</small>
+              <h3>Aero Ergonomic Chair</h3>
+              <div><strong>$495</strong><span>Mesh / Recycled aluminium</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 office-product" data-office-category="storage">
+          <article class="office-product-card">
+            <div class="office-product-card__image">
+              <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=900&q=85" alt="Minimal office storage">
+              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="office-quick" data-office-modal="Linea Storage Unit">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div class="office-product-card__body">
+              <small>STORAGE / MODULAR</small>
+              <h3>Linea Storage Unit</h3>
+              <div><strong>$620</strong><span>Oak veneer / Steel</span></div>
+            </div>
+          </article>
+        </div>
 
 
 
+        <div class="col-sm-6 col-lg-4 office-product" data-office-category="lighting">
+          <article class="office-product-card">
+            <div class="office-product-card__image">
+              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=85" alt="Modern office lighting">
+              <span class="office-badge">NEW</span>
+              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="office-quick" data-office-modal="Halo Desk Lamp">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div class="office-product-card__body">
+              <small>LIGHTING / DESK</small>
+              <h3>Halo Desk Lamp</h3>
+              <div><strong>$145</strong><span>Brushed metal / LED</span></div>
+            </div>
+          </article>
+        </div>
 
+        <div class="col-sm-6 col-lg-4 office-product" data-office-category="desks">
+          <article class="office-product-card">
+            <div class="office-product-card__image">
+              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="Collaborative office table">
+              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="office-quick" data-office-modal="Forma Meeting Table">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div class="office-product-card__body">
+              <small>TABLES / MEETING</small>
+              <h3>Forma Meeting Table</h3>
+              <div><strong>$740</strong><span>Oak / Powder-coated steel</span></div>
+            </div>
+          </article>
+        </div>
 
+        <div class="col-sm-6 col-lg-4 office-product" data-office-category="chairs">
+          <article class="office-product-card">
+            <div class="office-product-card__image">
+              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85" alt="Lounge chair for office">
+              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="office-quick" data-office-modal="Miro Lounge Chair">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div class="office-product-card__body">
+              <small>SEATING / LOUNGE</small>
+              <h3>Miro Lounge Chair</h3>
+              <div><strong>$385</strong><span>Wool / Solid wood</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FEATURE BANNER -->
+  <section class="office-feature">
+    <div class="container">
+      <div class="office-feature__inner">
+        <div class="office-feature__copy">
+          <span class="office-kicker">THE ERGO EDIT</span>
+          <h2>Comfort is not<br><em>a luxury.</em></h2>
+          <p>Smart ergonomic pieces keep your body supported so your best ideas can stay in the room longer.</p>
+          <a href="#office-products" class="btn office-btn office-btn--light">Explore ergonomic pieces <i class="fa-solid fa-arrow-right ms-2"></i></a>
+        </div>
+        <div class="office-feature__visual">
+          <div class="office-orbit"></div>
+          <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?auto=format&fit=crop&w=1000&q=90" alt="Ergonomic office chair">
+          <div class="office-feature-tag"><i class="fa-solid fa-leaf"></i> Designed for long days</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- BENEFITS -->
+  <section class="office-benefits py-5">
+    <div class="container py-lg-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="office-benefit">
+            <div class="office-benefit__icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <h3>Fast delivery</h3>
+            <p>Easy delivery options for homes, studios and professional offices.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="office-benefit">
+            <div class="office-benefit__icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Easy assembly</h3>
+            <p>Thoughtful construction with clear assembly and support when you need it.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="office-benefit">
+            <div class="office-benefit__icon"><i class="fa-solid fa-recycle"></i></div>
+            <h3>Made responsibly</h3>
+            <p>Materials selected with durability, repairability and lower waste in mind.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="office-newsletter">
+    <div class="container">
+      <div class="office-newsletter__box">
+        <div>
+          <span class="office-kicker">NESTCRAFT OFFICE</span>
+          <h2>Make your workspace<br><span>worth coming to.</span></h2>
+        </div>
+        <form class="office-newsletter-form" id="officeNewsletter">
+          <label for="officeEmail" class="visually-hidden">Email</label>
+          <input id="officeEmail" type="email" placeholder="Your email address" required>
+          <button type="submit">Join <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal fade" id="officeQuickModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content office-modal">
+        <div class="modal-header border-0">
+          <span class="office-kicker">QUICK VIEW</span>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <i class="fa-solid fa-couch office-modal-icon"></i>
+          <h3 id="officeModalTitle">Product</h3>
+          <p>Premium office furniture designed around comfort, character and everyday productivity.</p>
+          <div class="d-flex gap-2 flex-wrap">
+            <span class="office-modal-pill"><i class="fa-solid fa-check"></i> Ergonomic</span>
+            <span class="office-modal-pill"><i class="fa-solid fa-leaf"></i> Durable</span>
+            <span class="office-modal-pill"><i class="fa-solid fa-truck"></i> Delivery</span>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button class="btn office-btn office-btn--dark w-100" data-bs-dismiss="modal">Continue exploring</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <div class="about-page">
 
     <section class="about-hero">
@@ -641,11 +1027,14 @@
 
 
 
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
 
 
 
- <!-- javasscript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <!-- javasscript
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 
 
     <script>
@@ -833,15 +1222,126 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 100);
 
 });
+
+    document.addEventListener("DOMContentLoaded", () => {
+  // Animated counters
+  const counters = document.querySelectorAll("[data-office-count]");
+  const counterObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = Number(el.dataset.officeCount);
+      let current = 0;
+      const step = Math.max(1, Math.ceil(target / 45));
+
+      const tick = () => {
+        current += step;
+        if (current >= target) {
+          el.textContent = target;
+          return;
+        }
+        el.textContent = current;
+        requestAnimationFrame(tick);
+      };
+      tick();
+      observer.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => counterObserver.observe(counter));
+
+  // Product filtering
+  const filters = document.querySelectorAll("[data-office-filter]");
+  const products = document.querySelectorAll(".office-product");
+  const filterButtons = document.querySelectorAll(".office-filter");
+
+  function filterOfficeProducts(category) {
+    products.forEach(product => {
+      const match = category === "all" || product.dataset.officeCategory === category;
+      product.classList.toggle("office-hidden", !match);
+    });
+
+    filterButtons.forEach(button => {
+      button.classList.toggle("active", button.dataset.officeFilter === category);
+    });
+
+    const grid = document.getElementById("officeProductGrid");
+    if (grid) {
+      grid.animate(
+        [{ opacity: .45, transform: "translateY(8px)" }, { opacity: 1, transform: "translateY(0)" }],
+        { duration: 380, easing: "ease-out" }
+      );
+    }
+  }
+
+  filters.forEach(button => {
+    button.addEventListener("click", event => {
+      event.preventDefault();
+      const category = button.dataset.officeFilter;
+      filterOfficeProducts(category);
+
+      if (button.classList.contains("office-filter")) {
+        document.getElementById("office-products")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
+
+  // Wishlist interaction
+  document.querySelectorAll(".office-wishlist").forEach(button => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("is-liked");
+      const icon = button.querySelector("i");
+      icon.classList.toggle("fa-regular");
+      icon.classList.toggle("fa-solid");
+    });
+  });
+
+  // Quick-view modal
+  const modalElement = document.getElementById("officeQuickModal");
+  const modalTitle = document.getElementById("officeModalTitle");
+
+  if (modalElement && window.bootstrap) {
+    const quickModal = new bootstrap.Modal(modalElement);
+
+    document.querySelectorAll("[data-office-modal]").forEach(button => {
+      button.addEventListener("click", () => {
+        modalTitle.textContent = button.dataset.officeModal;
+        quickModal.show();
+      });
+    });
+  }
+
+  // Newsletter demo
+  const newsletter = document.getElementById("officeNewsletter");
+  if (newsletter) {
+    newsletter.addEventListener("submit", event => {
+      event.preventDefault();
+      const button = newsletter.querySelector("button");
+      button.innerHTML = 'Subscribed <i class="fa-solid fa-check ms-1"></i>';
+      button.disabled = true;
+    });
+  }
+
+  // Small parallax effect for hero image
+  const hero = document.querySelector(".office-hero");
+  if (hero && window.matchMedia("(min-width: 992px)").matches) {
+    hero.addEventListener("mousemove", event => {
+      const x = (event.clientX / window.innerWidth - 0.5) * 10;
+      const y = (event.clientY / window.innerHeight - 0.5) * 6;
+      hero.style.backgroundPosition = `calc(50% + ${x}px) calc(50% + ${y}px)`;
+    });
+    hero.addEventListener("mouseleave", () => {
+      hero.style.backgroundPosition = "center";
+    });
+  }
+});
+
 </script>
 
 
-</body>
 
 
-
-
-
+  </body>
 
 
 </html>
