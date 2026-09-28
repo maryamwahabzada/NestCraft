@@ -1161,6 +1161,60 @@ html { scroll-behavior: smooth; }
    CARD REVEAL ANIMATION END
 ===================================================== */
 
+   /* Contact Section start */
+
+.contact-section {
+    background: url("images/photo12.jpg") center / cover no-repeat;
+    /* background-position: center; */
+    color: #fff;
+}
+
+.contact-form {
+    height: 100%;
+    background-color: #06060675;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+.contact-form .form-control {
+    padding: 12px 15px;
+    border-radius: 6px;
+    background-color: rgb(247, 243, 240);
+}
+
+.contact-map {
+    height: 100%;
+    background-color: #06060675;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.map-container {
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+@media (max-width:578px) {
+    .contact-section{
+        background: url(images/photo16.jpg) center / cover no-repeat;
+    }
+    .map-container{
+        height: 200px;
+    }
+    .contact-form .form-control {
+    padding: 5px;
+}
+    
+}
+/* contact section finish */
 
 
 /* =====================================================
