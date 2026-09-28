@@ -1,3 +1,320 @@
+
+/* home start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body h2 {
+  color: #6c2424;
+}
+
+/* Navbar */
+
+#mainNavbar {
+    transition: background-color 0.5s ease;
+}
+
+nav .nav-link{
+    color: #fff;
+    font-weight: bold;
+}
+
+#mainNavbar.scrolled {
+    background-color:#ffffff;
+    box-shadow: 1px 1px 15px gray;
+}
+
+#mainNavbar.scrolled .nav-link{
+  color: #000000;
+}
+
+nav .nav-link:hover{
+  transform: scale(1.2);
+  color: #fff;
+}
+
+
+/* hero section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('images/ph6.png') center/cover no-repeat;
+  }
+
+.hero-section .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #f0e4dae6 50%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+  }
+.hero-section .hero-text h1, .hero-text h5, .hero-text p {
+    color: #6b2c2c;
+  }
+.hero-section .btn{
+    background-color:#124D1C;
+    color: #fff;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+.hero-section .btn:hover{
+    transform: scale(1.1);
+    border: 2px solid #124D1C;
+    color: #124D1C;
+}
+
+/* start section countdown */
+ .countdown-section {
+    background-color: #6c2424;
+    letter-spacing: 5px;
+  }
+  small {
+    opacity: 0.8;
+  }
+  .countdown-section .countnumb{
+    border: 1px solid rgba(133, 133, 133, 0.678) ;
+    padding: 20px 12px ;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgba(167, 165, 165, 0.147);
+  }
+
+
+
+/* section cards */
+.hover-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.75rem;
+      transition: transform 0.3s ease;
+    }
+
+.hover-card img {
+      width: 100%;
+      height: 350px;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+.hover-card a{
+      position: absolute;
+      z-index: 10;
+      color: rgb(243, 239, 239);
+      right: 15px;
+      top: 10px;
+      padding: 5px 8px;
+      background-color: rgba(209, 208, 208, 0.564);
+      border-radius: 50%;
+    }
+.hover-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(50, 50, 50, 0.463);
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.25rem;
+      text-align: center;
+    }
+.hover-card:hover img {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .hover-card:hover .hover-overlay {
+      opacity: 1;
+    }
+
+.hover-overlay h6 {
+      color: #FFD700;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+.hover-overlay h4 {
+      font-weight: 700;
+      margin-top: 0.5rem;
+    }
+
+.hover-overlay p {
+      opacity: 0.85;
+    }
+
+ 
+    /* product scroll */
+.product-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.product-card {
+    flex: 0 0 auto;
+}
+
+.product-scroll img {
+    width: 300px;
+    height: 250px;
+}
+
+
+/* product-scroll finish */
+
+
+.twins .left{
+  padding: 100px 50px 10px;
+  background-color:#6c2424;
+  color: #ffffff;
+}
+.twins .triples{
+  height: 500px;
+}
+.menu-last{
+  float: none; 
+  clear: both;
+  width: 100%; 
+  margin: 10% auto;
+  /* background: #eee; */
+  margin-top: -100px;
+  margin-left:-50px;
+}
+
+.menu-last ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu-last li{
+	float: none; 
+  width: 100%;
+  height: 100px;
+}
+
+.menu-last li a{
+  display: block; 
+  width: 100%; 
+  height: 100%;
+  padding: 20px; 
+  border-left: 5px solid; 
+  position: relative; 
+  z-index: 2;
+  text-decoration: none;
+  color: #dddddc;
+  box-sizing: border-box;  
+  -moz-box-sizing: border-box;  
+  -webkit-box-sizing: border-box; 
+}
+.menu-last ul .active{
+  background-color: #E4B028;
+  color: white;
+}
+
+	
+.menu-last li a:hover{ border-bottom: 0px; color: #fff;}
+.menu-last li:first-child a{ border-left: 10px solid #124D1C; }
+.menu-last li:nth-child(2) a{ border-left: 10px solid #EBEDE3; }
+.menu-last li:nth-child(3) a{ border-left: 10px solid #124D1C; }
+.menu-last li:nth-child(4) a{ border-left: 10px solid #EBEDE3; }
+.menu-last li:last-child a{ border-left: 10px solid #124D1C; }
+
+.menu-last li a:after { 
+  content: "";
+  height: 100%; 
+  left: 0; 
+  top: 0; 
+  width: 0px;  
+  position: absolute; 
+  transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s; 
+  z-index: -1;
+}
+
+.menu-last li a:hover:after{ width: 100%; }
+.menu-last li:first-child a:after{ background: #124D1C; }
+.menu-last li:nth-child(2) a:after{ background: #E4B028; }
+.menu-last li:nth-child(3) a:after{ background: #124D1C; }
+.menu-last li:nth-child(4) a:after{ background: #E4B028; }
+.menu-last li:last-child a:after{ background: #124D1C; }
+
+
+.menu-last li:hover a::after{
+  content:"🔵 Every NestCraft piece is more than furniture—is a story of comfort, beauty, and shaped to reflect your lifestyle and taste.";
+}
+.menu-last li:hover a span{
+  opacity: 0;
+}
+
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/boeCNmOCCh-EWFLSfVffDg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+
+/* Mobile */
+@media (max-width: 574px) {
+     nav ul li{
+    margin: 0 5px;}
+    #mainNavbar.scrolled .navbar-toggler{
+      background-color:#198754;
+
+    }
+    #mainNavbar.scrolled .navbar-toggler-icon{
+      padding: 16px;
+      font-size: 12px;
+
+    }
+
+
+    .product-scroll {
+        overflow-x: hidden;
+    }
+
+    .prodects {
+        display: flex;
+        flex-direction: column;
+        gap: 30px !important;
+    }
+
+    .prodects > .container {
+        width: 100%;
+    }
+    .product-scroll img {
+        width: 100%;
+        height:auto;
+        aspect-ratio: 400 / 250;
+        object-fit:fill;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
 
 :root {
@@ -1220,6 +1537,7 @@ html { scroll-behavior: smooth; }
     }
 
 }
+
 
 
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nest</title>
+    <title>NestCraft</title>
 
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
@@ -13,403 +13,480 @@
 
      <!-- bootstrap icon -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-      <!-- Font Awesome -->
+  
+        <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
 
+       <!-- AOS -->
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 </head>
-<body class="office-page">
 
-    <!-- OFFICE HERO -->
-  <section class="office-hero">
-    <div class="office-hero__overlay"></div>
-    <div class="container position-relative z-2">
-      <div class="row align-items-center min-vh-75">
-        <div class="col-lg-7">
-          <!-- <span class="office-eyebrow"><i class="fa-solid fa-building"></i> NESTCRAFT OFFICE</span> -->
-          <h1 class="office-hero__title">Work beautifully.<br><em>Think boldly.</em></h1>
-          <p class="office-hero__text">
-            Transform your workspace with furniture designed for focus, comfort and effortless style.
-          </p>
-          <div class="d-flex flex-wrap gap-3">
-            <a href="#office-products" class="btn office-btn office-btn--gold">
-              Explore Collection <i class="fa-solid fa-arrow-right ms-2"></i>
+ <body>
+
+    <!-- home page start -->
+        <!-- Navbar -->
+    <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top "
+        id="mainNavbar">
+
+        <div class="container-fluid px-5">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img
+                    src="images/logo.png"
+                    alt="Logo"
+                    width="50"
+                    height="60"
+                    class="img-fluid"
+                >
             </a>
-            <a href="#office-showcase" class="btn office-btn office-btn--glass">
-              View Spaces <i class="fa-solid fa-play ms-2"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-5 d-none d-lg-block">
-          <div class="office-hero-card">
-           
-            <div>
-              <small>DESIGNED FOR</small>
-              <strong>Modern Work</strong>
+
+            <!-- Mobile Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+
+                <ul class="navbar-nav mr-5 gap-lg-3 d-flex flex-row ">
+
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#">
+                            Home 
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#">
+                          Office
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#">
+                            Decor
+                        </a>
+                    </li>
+
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex flex-sm-row align-items">
+                <input type="text" class="form-control mb-sm-0 me-sm-2  " placeholder="Search...">
+                <button class="btn btn-success" type="submit">Search</button>
+                </form>
+
             </div>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </div>
+        </div>
+    </nav>
+
+
+        <!-- hero section -->
+ <section class="hero-section">
+  <div class="hero-overlay">
+    <div data-aos="fade-left" data-aos-delay="300" class="hero-text">
+      <!-- <h5 class="text-uppercase fw-semibold">Luxury Furniture Collections  </h5> -->
+      <h1 class="display-4 fw-bold">Luxury Furniture Collections  </h1>
+      <p class="fw-medium border-top pt-2 mt-3"> Sofas | Beds | Dining | Decor</p>
+      <!-- <div class="installment-banner">Available on Monthly Installments</div> -->
+    <button class="btn"> <div class="spinner-grow spinner-grow-sm text-success mx-1"></div>learn more</button>
+
+    </div>
+  </div>
+</section>
+
+<!-- section countdown -->
+
+<section data-aos="fade-in" data-aos-delay="200" class="countdown-section text-center text-white py-4">
+  <h5 class="fw-semibold mb-4 pb-4">SALE ENDS IN</h5>
+  <div id="countdown" class=" d-flex justify-content-center gap-4 fs-3 fw-bold my-4">
+    <div><span id="days" class=" countnumb">00</span><br><br><small>DAYS</small></div>
+    <div><span id="hours" class=" countnumb">00</span><br><br><small>HRS</small></div>
+    <div><span id="minutes" class=" countnumb">00</span><br><br><small>MINS</small></div>
+    <div><span id="seconds" class="countnumb">00</span><br><br><small>SEC</small></div>
+  </div>
+</section>
+
+
+
+<!-- section cards -->
+         <!-- Section Title -->
+        <div class="container mb-4 mt-5 text-center cards">
+            <h2 class="fw-bold">Featured Products</h2>
+            <p class="text-secondary">
+                Discover our latest home decor products
+            </p>
+        </div>
+<div class="container  ">
+  <div data-aos="fade-up" data-aos-delay="100" class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="hover-card shadow">
+        <img src="images/ph8.jpg" alt="Birthday Cake">
+        <a href="#"><i class="bi bi-heart"></i></a>
+        <div class="hover-overlay">
+          <h6>DINING TABLE</h6>
+          <h4>Neon Skies Party</h4>
+          <p>Vibrant themes and high‑energy atmosphere.</p>
         </div>
       </div>
     </div>
-    <div class="office-hero__scroll"><span>SCROLL</span><i class="fa-solid fa-arrow-down"></i></div>
-  </section>
 
-  <!-- QUICK STATS
-  <section class="office-stats">
-    <div class="container">
-      <div class="row g-0 text-center">
-        <div class="col-6 col-lg-3 office-stat">
-          <i class="fa-solid fa-chair"></i>
-          <strong data-office-count="120">0</strong><span>+ Designs</span>
-        </div>
-        <div class="col-6 col-lg-3 office-stat">
-          <i class="fa-solid fa-layer-group"></i>
-          <strong data-office-count="18">0</strong><span> Collections</span>
-        </div>
-        <div class="col-6 col-lg-3 office-stat">
-          <i class="fa-solid fa-leaf"></i>
-          <strong data-office-count="70">0</strong><span>% Sustainable</span>
-        </div>
-        <div class="col-6 col-lg-3 office-stat">
-          <i class="fa-solid fa-headset"></i>
-          <strong>24/7</strong><span> Support</span>
+    <!-- Card 2 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="hover-card shadow">
+        <img src="images/ph6.jpg" alt="Wedding Event">
+        <a href="#"><i class="bi bi-heart"></i></a>
+        <div class="hover-overlay">
+          <h6>COMFORT SOFA</h6>
+          <h4>Golden Elegance</h4>
+          <p>Luxury‑style celebration with gold accents.</p>
         </div>
       </div>
     </div>
-  </section> -->
 
-  <!-- INTRO -->
-  <section class="office-intro py-5" id="office-showcase">
-    <div class="container py-lg-5">
-      <div class="row align-items-end g-4">
-        <div class="col-lg-7">
-          <span class="office-kicker">THE OFFICE EDIT</span>
-          <h2 class="office-section-title">Your workspace,<br><span>reimagined.</span></h2>
-        </div>
-        <div class="col-lg-5">
-          <p class="office-muted mb-0">
-            From the first sketch to the final detail, every piece is made to bring calm,
-            character and productivity into the places where ideas happen.
-          </p>
-        </div>
-      </div>
-
-       <!-- Horizontal category cards -->
-      <div class="row g-3 mt-4">
-        <div class="col-md-4">
-          <a class="office-category-card" href="#office-products" data-office-filter="desks">
-            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="Modern office desks">
-            <div class="office-category-card__content">
-              <span>01</span><h3>Desks</h3><i class="fa-solid fa-arrow-right"></i>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="office-category-card" href="#office-products" data-office-filter="chairs">
-            <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?auto=format&fit=crop&w=900&q=85" alt="Office chair">
-            <div class="office-category-card__content">
-              <span>02</span><h3>Seating</h3><i class="fa-solid fa-arrow-right"></i>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="office-category-card" href="#office-products" data-office-filter="storage">
-            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=900&q=85" alt="Office workspace and storage">
-            <div class="office-category-card__content">
-              <span>03</span><h3>Storage</h3><i class="fa-solid fa-arrow-right"></i>
-            </div>
-          </a>
+    <!-- Card 3 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="hover-card shadow">
+        <img src="images/ph11.jpg" alt="Party Event">
+        <a href="#"><i class="bi bi-heart"></i></a>
+        <div class="hover-overlay">
+          <h6>MODERN TABLE</h6>
+          <h4>Modern Glow Night</h4>
+          <p>Cool color palette and dynamic lighting.</p>
         </div>
       </div>
     </div>
-  </section>
-  <!-- SHOWCASE CAROUSEL -->
-  <section class="office-showcase py-5">
-    <div class="container py-lg-5">
-      <div class="d-flex justify-content-between align-items-end mb-4">
-        <div>
-          <span class="office-kicker">SPACES IN FOCUS</span>
-          <h2 class="office-section-title mb-0">Built around <span>your day.</span></h2>
-        </div>
-        <div class="office-carousel-controls d-none d-md-flex">
-          <button class="office-circle-btn" type="button" data-bs-target="#officeCarousel" data-bs-slide="prev" aria-label="Previous">
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button class="office-circle-btn office-circle-btn--dark" type="button" data-bs-target="#officeCarousel" data-bs-slide="next" aria-label="Next">
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
 
-      <div id="officeCarousel" class="carousel slide office-carousel" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="2"></button>
-        </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row align-items-center g-0">
-              <div class="col-lg-7">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1300&q=88" class="office-carousel-img" alt="Open plan office">
-              </div>
-              <div class="col-lg-5">
-                <div class="office-carousel-copy">
-                  <span>01 / OPEN PLAN</span>
-                  <h3>Room for ideas to breathe.</h3>
-                  <p>Flexible desks, warm textures and smart storage create a space that can change with your team.</p>
-                  <a href="#office-products">Explore open-plan essentials <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row align-items-center g-0">
-              <div class="col-lg-7">
-                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=90" class="office-carousel-img" alt="Executive office">
-              </div>
-              <div class="col-lg-5">
-                <div class="office-carousel-copy">
-                  <span>02 / EXECUTIVE</span>
-                  <h3>Quiet confidence.</h3>
-                  <p>Refined materials and ergonomic seating bring a sophisticated feel to focused work.</p>
-                  <a href="#office-products">Shop executive pieces <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row align-items-center g-0">
-              <div class="col-lg-7">
-                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1300&q=88" class="office-carousel-img" alt="Creative office">
-              </div>
-              <div class="col-lg-5">
-                <div class="office-carousel-copy">
-                  <span>03 / CREATIVE</span>
-                  <h3>Designed to collaborate.</h3>
-                  <p>Make meetings, brainstorming and everyday work feel more natural with flexible furniture.</p>
-                  <a href="#office-products">Discover collaborative furniture <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-   <!-- PRODUCTS -->
-  <section class="office-products py-5" id="office-products">
-    <div class="container py-lg-5">
-      <div class="text-center mb-4">
-        <span class="office-kicker">SHOP OFFICE</span>
-        <h2 class="office-section-title">Pieces with <span>purpose.</span></h2>
-        <p class="office-muted mx-auto office-max-600">Choose a category and discover furniture made for productive, beautiful spaces.</p>
-      </div>
-
-      <div class="office-filter-bar">
-        <button class="office-filter active" data-office-filter="all">All</button>
-        <button class="office-filter" data-office-filter="desks"><i class="fa-solid fa-table"></i> Desks</button>
-        <button class="office-filter" data-office-filter="chairs"><i class="fa-solid fa-chair"></i> Chairs</button>
-        <button class="office-filter" data-office-filter="storage"><i class="fa-solid fa-box-archive"></i> Storage</button>
-        <button class="office-filter" data-office-filter="lighting"><i class="fa-regular fa-lightbulb"></i> Lighting</button>
-      </div>
-
-      <div class="row g-4" id="officeProductGrid">
-
-        <div class="col-sm-6 col-lg-4 office-product" data-office-category="desks">
-          <article class="office-product-card">
-            <div class="office-product-card__image">
-              <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=900&q=85" alt="Oak office desk">
-              <span class="office-badge">NEW</span>
-              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-              <button class="office-quick" data-office-modal="Executive Oak Desk">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-            </div>
-            <div class="office-product-card__body">
-              <small>DESKS / EXECUTIVE</small>
-              <h3>Executive Oak Desk</h3>
-              <div><strong>$895</strong><span>Solid oak / Walnut</span></div>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 office-product" data-office-category="chairs">
-          <article class="office-product-card">
-            <div class="office-product-card__image">
-              <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?auto=format&fit=crop&w=900&q=85" alt="Ergonomic office chair">
-              <span class="office-badge office-badge--dark">BESTSELLER</span>
-              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-              <button class="office-quick" data-office-modal="Aero Ergonomic Chair">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-            </div>
-            <div class="office-product-card__body">
-              <small>SEATING / ERGONOMIC</small>
-              <h3>Aero Ergonomic Chair</h3>
-              <div><strong>$495</strong><span>Mesh / Recycled aluminium</span></div>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 office-product" data-office-category="storage">
-          <article class="office-product-card">
-            <div class="office-product-card__image">
-              <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=900&q=85" alt="Minimal office storage">
-              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-              <button class="office-quick" data-office-modal="Linea Storage Unit">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-            </div>
-            <div class="office-product-card__body">
-              <small>STORAGE / MODULAR</small>
-              <h3>Linea Storage Unit</h3>
-              <div><strong>$620</strong><span>Oak veneer / Steel</span></div>
-            </div>
-          </article>
-        </div>
-
-
-
-        <div class="col-sm-6 col-lg-4 office-product" data-office-category="lighting">
-          <article class="office-product-card">
-            <div class="office-product-card__image">
-              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=85" alt="Modern office lighting">
-              <span class="office-badge">NEW</span>
-              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-              <button class="office-quick" data-office-modal="Halo Desk Lamp">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-            </div>
-            <div class="office-product-card__body">
-              <small>LIGHTING / DESK</small>
-              <h3>Halo Desk Lamp</h3>
-              <div><strong>$145</strong><span>Brushed metal / LED</span></div>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 office-product" data-office-category="desks">
-          <article class="office-product-card">
-            <div class="office-product-card__image">
-              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="Collaborative office table">
-              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-              <button class="office-quick" data-office-modal="Forma Meeting Table">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-            </div>
-            <div class="office-product-card__body">
-              <small>TABLES / MEETING</small>
-              <h3>Forma Meeting Table</h3>
-              <div><strong>$740</strong><span>Oak / Powder-coated steel</span></div>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 office-product" data-office-category="chairs">
-          <article class="office-product-card">
-            <div class="office-product-card__image">
-              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85" alt="Lounge chair for office">
-              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-              <button class="office-quick" data-office-modal="Miro Lounge Chair">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-            </div>
-            <div class="office-product-card__body">
-              <small>SEATING / LOUNGE</small>
-              <h3>Miro Lounge Chair</h3>
-              <div><strong>$385</strong><span>Wool / Solid wood</span></div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- FEATURE BANNER -->
-  <section class="office-feature">
-    <div class="container">
-      <div class="office-feature__inner">
-        <div class="office-feature__copy">
-          <span class="office-kicker">THE ERGO EDIT</span>
-          <h2>Comfort is not<br><em>a luxury.</em></h2>
-          <p>Smart ergonomic pieces keep your body supported so your best ideas can stay in the room longer.</p>
-          <a href="#office-products" class="btn office-btn office-btn--light">Explore ergonomic pieces <i class="fa-solid fa-arrow-right ms-2"></i></a>
-        </div>
-        <div class="office-feature__visual">
-          <div class="office-orbit"></div>
-          <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?auto=format&fit=crop&w=1000&q=90" alt="Ergonomic office chair">
-          <div class="office-feature-tag"><i class="fa-solid fa-leaf"></i> Designed for long days</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BENEFITS -->
-  <section class="office-benefits py-5">
-    <div class="container py-lg-5">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="office-benefit">
-            <div class="office-benefit__icon"><i class="fa-solid fa-truck-fast"></i></div>
-            <h3>Fast delivery</h3>
-            <p>Easy delivery options for homes, studios and professional offices.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="office-benefit">
-            <div class="office-benefit__icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-            <h3>Easy assembly</h3>
-            <p>Thoughtful construction with clear assembly and support when you need it.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="office-benefit">
-            <div class="office-benefit__icon"><i class="fa-solid fa-recycle"></i></div>
-            <h3>Made responsibly</h3>
-            <p>Materials selected with durability, repairability and lower waste in mind.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- NEWSLETTER -->
-  <section class="office-newsletter">
-    <div class="container">
-      <div class="office-newsletter__box">
-        <div>
-          <span class="office-kicker">NESTCRAFT OFFICE</span>
-          <h2>Make your workspace<br><span>worth coming to.</span></h2>
-        </div>
-        <form class="office-newsletter-form" id="officeNewsletter">
-          <label for="officeEmail" class="visually-hidden">Email</label>
-          <input id="officeEmail" type="email" placeholder="Your email address" required>
-          <button type="submit">Join <i class="fa-solid fa-arrow-right"></i></button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- QUICK VIEW MODAL -->
-  <div class="modal fade" id="officeQuickModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content office-modal">
-        <div class="modal-header border-0">
-          <span class="office-kicker">QUICK VIEW</span>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body pt-0">
-          <i class="fa-solid fa-couch office-modal-icon"></i>
-          <h3 id="officeModalTitle">Product</h3>
-          <p>Premium office furniture designed around comfort, character and everyday productivity.</p>
-          <div class="d-flex gap-2 flex-wrap">
-            <span class="office-modal-pill"><i class="fa-solid fa-check"></i> Ergonomic</span>
-            <span class="office-modal-pill"><i class="fa-solid fa-leaf"></i> Durable</span>
-            <span class="office-modal-pill"><i class="fa-solid fa-truck"></i> Delivery</span>
-          </div>
-        </div>
-        <div class="modal-footer border-0">
-          <button class="btn office-btn office-btn--dark w-100" data-bs-dismiss="modal">Continue exploring</button>
+    <!-- Card 4 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="hover-card shadow">
+        <img src="images/ph17.jpg" alt="Concert Event">
+        <a href="#"><i class="bi bi-heart"></i></a>
+        <div class="hover-overlay">
+          <h6>BED</h6>
+          <h4>Live Music Show</h4>
+          <p>Energy, rhythm, and unforgettable vibes.</p>
         </div>
       </div>
     </div>
   </div>
+
+  <div data-aos="fade-down"  class="row g-4 my-2">
+    <!-- Card 1 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="hover-card shadow">
+        <img src="images/ph18.jpg" alt="Birthday Cake">
+        <a href="#"><i class="bi bi-heart"></i></a>
+        <div class="hover-overlay">
+          <h6>SIMPLE BED</h6>
+          <h4>Neon Skies Party</h4>
+          <p>Vibrant themes and high‑energy atmosphere.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="hover-card shadow">
+        <img src="images/ph11.jpg" alt="Wedding Event">
+        <a href="#"><i class="bi bi-heart"></i></a>
+        <div class="hover-overlay">
+          <h6>TABLE</h6>
+          <h4>Golden Elegance</h4>
+          <p>Luxury‑style celebration with gold accents.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="hover-card shadow">
+        <img src="images/ph22.jpg" alt="Party Event">
+        <a href="#"><i class="bi bi-heart"></i></a>
+        <div class="hover-overlay">
+          <h6>NEW LAMP</h6>
+          <h4>Modern Glow Night</h4>
+          <p>Cool color palette and dynamic lighting.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="hover-card shadow">
+        <img src="images/ph21.jpg" alt="Concert Event">
+        <a href="#"><i class="bi bi-heart"></i></a>
+        <div class="hover-overlay">
+          <h6>CHARI SIMPLE</h6>
+          <h4>Live Music Show</h4>
+          <p>Energy, rhythm, and unforgettable vibes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <section class="container-fluid py-4 scroll-part mt-5 scroll-prodect">
+        <!-- Product Scroll Area -->
+        <div class="product-scroll my-5">
+
+         <div class="d-flex flex-nowrap gap-3 prodects">
+                <div data-aos="fade-left" data-aos-delay="300" class="container mx-4 col-3 col-md-5 col-sm-12 col-xs-12 px-5 mt-5">
+                    <h2 class="fw-bold mb-4">Featured Products</h2>
+                    <p class="text-secondary">Our furniture is crafted with a perfect balance of elegance, comfort, and durability. Each piece is designed to transform your living space into a haven of style, blending modern aesthetics with timeless craftsmanship. Using premium materials and refined finishes, we create furniture that not only enhances your home but also reflects your personality. our collection brings warmth, sophistication, and lasting quality to every corner of your home. </p>
+                </div>
+
+                <!-- Product 1 -->
+                <div data-aos="fade-in" data-aos-delay="400" class="product-card ">
+
+                    <!-- Product Image -->
+                    <div class="product-image">
+                        <img
+                            src="images/ph10.jpg"
+                            data-original="images/bed1.jpg"
+                            data-hover="images/bed2.jpg"
+                            alt="Brontë Ottoman Storage King Bed"
+                            class="product-img">
+                        <!-- Pre Order -->
+                        <div class="pre-order">
+                            PRE-ORDER – RESERVE NOW</div>
+                    </div>
+
+
+                    <!-- Product Information -->
+                    <div class="pt-3">
+
+                        <h5 class="product-title ">
+                            Bronte Ottoman Storage</h5>
+                        <p class="text-secondary mb-2">
+                            Olive Green Sustainable Velvet</p>
+                        <h5 class="mb-3 text-danger">£995</h5>
+
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div data-aos="fade-in" data-aos-delay="500" class="product-card ">
+
+                    <div class="product-image">
+                        <img
+                            src="images/ph12.jpg"
+                            data-original="images/chair1.jpg"
+                            data-hover="images/chair2.jpg"
+                            alt="Modern Chair"
+                            class="product-img">
+                        <div class="pre-order">
+                            PRE-ORDER – RESERVE NOW</div>
+
+                    </div>
+                                      <div class="pt-3">
+
+                        <h5 class="product-title">
+                            Modern Velvet Chair</h5>
+                        <p class="text-secondary mb-2">
+                            Green Sustainable Velvet </p>
+                        <h5 class="mb-3 text-danger">£495</h5>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div data-aos="fade-in" data-aos-delay="600" class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/ph13.jpg"
+                            data-original="images/table1.jpg"
+                            data-hover="images/table2.jpg"
+                            alt="Wooden Table"
+                            class="product-img">
+                        <div class="pre-order">
+                            PRE-ORDER – RESERVE NOW
+                        </div>
+
+                    </div>
+
+                    <div class="pt-3">
+
+                        <h5 class="product-title">
+                            Modern Wooden Table </h5>
+                        <p class="text-secondary mb-2">
+                            Natural Oak Wood </p>
+                        <h5 class="mb-3 text-danger">£795</h5>
+
+                    </div>
+
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="images/ph15.jpg"
+                            data-original="images/sofa1.jpg"
+                            data-hover="images/sofa2.jpg"
+                            alt="Modern Sofa"
+                            class="product-img">
+
+                        <div class="pre-order">
+                            PRE-ORDER – RESERVE NOW
+                        </div>
+
+                    </div>
+
+
+                    <div class="pt-3">
+
+                        <h5 class="product-title">
+                            Modern Green Sofa</h5>
+                        <p class="text-secondary mb-2">
+                            Sustainable Velvet</p>
+                         <h5 class="mb-3 text-danger">£1,195</h5>
+
+                    </div>
+
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="images/ph16.jpg"
+                            data-original="images/lamp1.jpg"
+                            data-hover="images/lamp2.jpg"
+                            alt="Table Lamp"
+                            class="product-img">
+                        <div class="pre-order">
+                            PRE-ORDER – RESERVE NOW
+                        </div>
+                    </div>
+
+
+                    <div class="pt-3">
+
+                        <h5 class="product-title"> 
+                            Modern Table Lamp </h5>
+                        <p class="text-secondary mb-2">
+                            Warm Natural Design
+                        </p>
+                        <h5 class="mb-3 text-danger">£195</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Trade Section -->
+    <section class="trade-section">
+        <!-- Main Content -->
+        <div class="container-fluid twins ">
+
+
+            <div class="row g-0 " style="height: 400px;">
+
+                <!-- Left Side -->
+                <div class="col-12 col-lg-6 col-md-12  left triples">
+
+                    <div data-aos="fade-out" class="trade-content mx-lg-5 mx-md-2">
+                        <h3 class="my-4">Crafted for the moments that matter.</h3>
+                        <p>NestCraft brings timeless elegance into modern homes. Our furniture blends rich textures, graceful curves, and enduring quality—each piece designed to make your space feel both luxurious and inviting.</p>
+                        <p>Every NestCraft piece is more than furniture—it’s a story of comfort, beauty, and connection, shaped to reflect your lifestyle and taste.</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Right Side Image -->
+                <div class="col-12 col-lg-3 col-md-6 triples">
+
+                    <div class="trade-image">
+
+                        <img
+                            src="images/ph6.jpg"
+                            alt="Trade furniture"
+                            class="img-fluid triples" style="width: 100%;"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 left triples" >
+
+                    <div  class="trade-content">
+                        <div class="menu-last">
+                           <ul>
+                            <li data-aos="fade-down" data-aos-delay="100"><a href="" class="disa"><span>HOME FURNITURE</span></a></li>
+
+                            <li data-aos="fade-down" data-aos-delay="200" class="active"><a href="" class="nav-link active"><span>OFFICC</span></a></li>
+
+                            <li data-aos="fade-down" data-aos-delay="300"><a href=""><span>KITCHEN</span></a></li>
+
+                            <li data-aos="fade-down" data-aos-delay="400"><a href=""><span>DECORATION</span></a></li>
+
+                            <li><a href=""><span>ORDER OTHERTHING</span></a>
+                            </li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- home page finish -->
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
 <div class="about-page">
 
     <section class="about-hero">
@@ -1015,10 +1092,407 @@
         </div>
 
     </section>
-
-
 </div>
 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <div class="office-page">
+
+    <!-- OFFICE HERO -->
+  <section class="office-hero">
+    <div class="office-hero__overlay"></div>
+    <div class="container position-relative z-2">
+      <div class="row align-items-center min-vh-75">
+        <div class="col-lg-7">
+          <!-- <span class="office-eyebrow"><i class="fa-solid fa-building"></i> NESTCRAFT OFFICE</span> -->
+          <h1 class="office-hero__title">Work beautifully.<br><em>Think boldly.</em></h1>
+          <p class="office-hero__text">
+            Transform your workspace with furniture designed for focus, comfort and effortless style.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#office-products" class="btn office-btn office-btn--gold">
+              Explore Collection <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+            <a href="#office-showcase" class="btn office-btn office-btn--glass">
+              View Spaces <i class="fa-solid fa-play ms-2"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="office-hero-card">
+           
+            <div>
+              <small>DESIGNED FOR</small>
+              <strong>Modern Work</strong>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="office-hero__scroll"><span>SCROLL</span><i class="fa-solid fa-arrow-down"></i></div>
+  </section>
+
+  <!-- QUICK STATS
+  <section class="office-stats">
+    <div class="container">
+      <div class="row g-0 text-center">
+        <div class="col-6 col-lg-3 office-stat">
+          <i class="fa-solid fa-chair"></i>
+          <strong data-office-count="120">0</strong><span>+ Designs</span>
+        </div>
+        <div class="col-6 col-lg-3 office-stat">
+          <i class="fa-solid fa-layer-group"></i>
+          <strong data-office-count="18">0</strong><span> Collections</span>
+        </div>
+        <div class="col-6 col-lg-3 office-stat">
+          <i class="fa-solid fa-leaf"></i>
+          <strong data-office-count="70">0</strong><span>% Sustainable</span>
+        </div>
+        <div class="col-6 col-lg-3 office-stat">
+          <i class="fa-solid fa-headset"></i>
+          <strong>24/7</strong><span> Support</span>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- INTRO -->
+  <section class="office-intro py-5" id="office-showcase">
+    <div class="container py-lg-5">
+      <div class="row align-items-end g-4">
+        <div class="col-lg-7">
+          <span class="office-kicker">THE OFFICE EDIT</span>
+          <h2 class="office-section-title">Your workspace,<br><span>reimagined.</span></h2>
+        </div>
+        <div class="col-lg-5">
+          <p class="office-muted mb-0">
+            From the first sketch to the final detail, every piece is made to bring calm,
+            character and productivity into the places where ideas happen.
+          </p>
+        </div>
+      </div>
+
+       <!-- Horizontal category cards -->
+      <div class="row g-3 mt-4">
+        <div class="col-md-4">
+          <a class="office-category-card" href="#office-products" data-office-filter="desks">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="Modern office desks">
+            <div class="office-category-card__content">
+              <span>01</span><h3>Desks</h3><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="office-category-card" href="#office-products" data-office-filter="chairs">
+            <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?auto=format&fit=crop&w=900&q=85" alt="Office chair">
+            <div class="office-category-card__content">
+              <span>02</span><h3>Seating</h3><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="office-category-card" href="#office-products" data-office-filter="storage">
+            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=900&q=85" alt="Office workspace and storage">
+            <div class="office-category-card__content">
+              <span>03</span><h3>Storage</h3><i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SHOWCASE CAROUSEL -->
+  <section class="office-showcase py-5">
+    <div class="container py-lg-5">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <span class="office-kicker">SPACES IN FOCUS</span>
+          <h2 class="office-section-title mb-0">Built around <span>your day.</span></h2>
+        </div>
+        <div class="office-carousel-controls d-none d-md-flex">
+          <button class="office-circle-btn" type="button" data-bs-target="#officeCarousel" data-bs-slide="prev" aria-label="Previous">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="office-circle-btn office-circle-btn--dark" type="button" data-bs-target="#officeCarousel" data-bs-slide="next" aria-label="Next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="officeCarousel" class="carousel slide office-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row align-items-center g-0">
+              <div class="col-lg-7">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1300&q=88" class="office-carousel-img" alt="Open plan office">
+              </div>
+              <div class="col-lg-5">
+                <div class="office-carousel-copy">
+                  <span>01 / OPEN PLAN</span>
+                  <h3>Room for ideas to breathe.</h3>
+                  <p>Flexible desks, warm textures and smart storage create a space that can change with your team.</p>
+                  <a href="#office-products">Explore open-plan essentials <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row align-items-center g-0">
+              <div class="col-lg-7">
+                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=90" class="office-carousel-img" alt="Executive office">
+              </div>
+              <div class="col-lg-5">
+                <div class="office-carousel-copy">
+                  <span>02 / EXECUTIVE</span>
+                  <h3>Quiet confidence.</h3>
+                  <p>Refined materials and ergonomic seating bring a sophisticated feel to focused work.</p>
+                  <a href="#office-products">Shop executive pieces <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row align-items-center g-0">
+              <div class="col-lg-7">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1300&q=88" class="office-carousel-img" alt="Creative office">
+              </div>
+              <div class="col-lg-5">
+                <div class="office-carousel-copy">
+                  <span>03 / CREATIVE</span>
+                  <h3>Designed to collaborate.</h3>
+                  <p>Make meetings, brainstorming and everyday work feel more natural with flexible furniture.</p>
+                  <a href="#office-products">Discover collaborative furniture <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- PRODUCTS -->
+  <section class="office-products py-5" id="office-products">
+    <div class="container py-lg-5">
+      <div class="text-center mb-4">
+        <span class="office-kicker">SHOP OFFICE</span>
+        <h2 class="office-section-title">Pieces with <span>purpose.</span></h2>
+        <p class="office-muted mx-auto office-max-600">Choose a category and discover furniture made for productive, beautiful spaces.</p>
+      </div>
+
+      <div class="office-filter-bar">
+        <button class="office-filter active" data-office-filter="all">All</button>
+        <button class="office-filter" data-office-filter="desks"><i class="fa-solid fa-table"></i> Desks</button>
+        <button class="office-filter" data-office-filter="chairs"><i class="fa-solid fa-chair"></i> Chairs</button>
+        <button class="office-filter" data-office-filter="storage"><i class="fa-solid fa-box-archive"></i> Storage</button>
+        <button class="office-filter" data-office-filter="lighting"><i class="fa-regular fa-lightbulb"></i> Lighting</button>
+      </div>
+
+      <div class="row g-4" id="officeProductGrid">
+
+        <div class="col-sm-6 col-lg-4 office-product" data-office-category="desks">
+          <article class="office-product-card">
+            <div class="office-product-card__image">
+              <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=900&q=85" alt="Oak office desk">
+              <span class="office-badge">NEW</span>
+              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="office-quick" data-office-modal="Executive Oak Desk">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div class="office-product-card__body">
+              <small>DESKS / EXECUTIVE</small>
+              <h3>Executive Oak Desk</h3>
+              <div><strong>$895</strong><span>Solid oak / Walnut</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 office-product" data-office-category="chairs">
+          <article class="office-product-card">
+            <div class="office-product-card__image">
+              <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?auto=format&fit=crop&w=900&q=85" alt="Ergonomic office chair">
+              <span class="office-badge office-badge--dark">BESTSELLER</span>
+              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="office-quick" data-office-modal="Aero Ergonomic Chair">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div class="office-product-card__body">
+              <small>SEATING / ERGONOMIC</small>
+              <h3>Aero Ergonomic Chair</h3>
+              <div><strong>$495</strong><span>Mesh / Recycled aluminium</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 office-product" data-office-category="storage">
+          <article class="office-product-card">
+            <div class="office-product-card__image">
+              <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=900&q=85" alt="Minimal office storage">
+              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="office-quick" data-office-modal="Linea Storage Unit">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div class="office-product-card__body">
+              <small>STORAGE / MODULAR</small>
+              <h3>Linea Storage Unit</h3>
+              <div><strong>$620</strong><span>Oak veneer / Steel</span></div>
+            </div>
+          </article>
+        </div>
+
+
+
+        <div class="col-sm-6 col-lg-4 office-product" data-office-category="lighting">
+          <article class="office-product-card">
+            <div class="office-product-card__image">
+              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=85" alt="Modern office lighting">
+              <span class="office-badge">NEW</span>
+              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="office-quick" data-office-modal="Halo Desk Lamp">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div class="office-product-card__body">
+              <small>LIGHTING / DESK</small>
+              <h3>Halo Desk Lamp</h3>
+              <div><strong>$145</strong><span>Brushed metal / LED</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 office-product" data-office-category="desks">
+          <article class="office-product-card">
+            <div class="office-product-card__image">
+              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="Collaborative office table">
+              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="office-quick" data-office-modal="Forma Meeting Table">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div class="office-product-card__body">
+              <small>TABLES / MEETING</small>
+              <h3>Forma Meeting Table</h3>
+              <div><strong>$740</strong><span>Oak / Powder-coated steel</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 office-product" data-office-category="chairs">
+          <article class="office-product-card">
+            <div class="office-product-card__image">
+              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85" alt="Lounge chair for office">
+              <button class="office-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button class="office-quick" data-office-modal="Miro Lounge Chair">Quick view <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </div>
+            <div class="office-product-card__body">
+              <small>SEATING / LOUNGE</small>
+              <h3>Miro Lounge Chair</h3>
+              <div><strong>$385</strong><span>Wool / Solid wood</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FEATURE BANNER -->
+  <section class="office-feature">
+    <div class="container">
+      <div class="office-feature__inner">
+        <div class="office-feature__copy">
+          <span class="office-kicker">THE ERGO EDIT</span>
+          <h2>Comfort is not<br><em>a luxury.</em></h2>
+          <p>Smart ergonomic pieces keep your body supported so your best ideas can stay in the room longer.</p>
+          <a href="#office-products" class="btn office-btn office-btn--light">Explore ergonomic pieces <i class="fa-solid fa-arrow-right ms-2"></i></a>
+        </div>
+        <div class="office-feature__visual">
+          <div class="office-orbit"></div>
+          <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?auto=format&fit=crop&w=1000&q=90" alt="Ergonomic office chair">
+          <div class="office-feature-tag"><i class="fa-solid fa-leaf"></i> Designed for long days</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="office-benefits py-5">
+    <div class="container py-lg-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="office-benefit">
+            <div class="office-benefit__icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <h3>Fast delivery</h3>
+            <p>Easy delivery options for homes, studios and professional offices.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="office-benefit">
+            <div class="office-benefit__icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Easy assembly</h3>
+            <p>Thoughtful construction with clear assembly and support when you need it.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="office-benefit">
+            <div class="office-benefit__icon"><i class="fa-solid fa-recycle"></i></div>
+            <h3>Made responsibly</h3>
+            <p>Materials selected with durability, repairability and lower waste in mind.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="office-newsletter">
+    <div class="container">
+      <div class="office-newsletter__box">
+        <div>
+          <span class="office-kicker">NESTCRAFT OFFICE</span>
+          <h2>Make your workspace<br><span>worth coming to.</span></h2>
+        </div>
+        <form class="office-newsletter-form" id="officeNewsletter">
+          <label for="officeEmail" class="visually-hidden">Email</label>
+          <input id="officeEmail" type="email" placeholder="Your email address" required>
+          <button type="submit">Join <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal fade" id="officeQuickModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content office-modal">
+        <div class="modal-header border-0">
+          <span class="office-kicker">QUICK VIEW</span>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <i class="fa-solid fa-couch office-modal-icon"></i>
+          <h3 id="officeModalTitle">Product</h3>
+          <p>Premium office furniture designed around comfort, character and everyday productivity.</p>
+          <div class="d-flex gap-2 flex-wrap">
+            <span class="office-modal-pill"><i class="fa-solid fa-check"></i> Ergonomic</span>
+            <span class="office-modal-pill"><i class="fa-solid fa-leaf"></i> Durable</span>
+            <span class="office-modal-pill"><i class="fa-solid fa-truck"></i> Delivery</span>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button class="btn office-btn office-btn--dark w-100" data-bs-dismiss="modal">Continue exploring</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1026,9 +1500,6 @@
 
 
 
-
-<!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
 
 
@@ -1036,7 +1507,20 @@
  <!-- javasscript
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 
+ <!-- Navbar Scroll -->
+    <script>
+        window.addEventListener("scroll", function () {
 
+            const navbar = document.getElementById("mainNavbar");
+
+            if (window.scrollY > 150) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+
+        });
+    </script>
     <script>
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -1280,12 +1764,20 @@ document.addEventListener("DOMContentLoaded", function () {
       const category = button.dataset.officeFilter;
       filterOfficeProducts(category);
 
+
       if (button.classList.contains("office-filter")) {
         document.getElementById("office-products")?.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     });
   });
 
+
+    
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
   // Wishlist interaction
   document.querySelectorAll(".office-wishlist").forEach(button => {
     button.addEventListener("click", () => {
@@ -1303,45 +1795,55 @@ document.addEventListener("DOMContentLoaded", function () {
   if (modalElement && window.bootstrap) {
     const quickModal = new bootstrap.Modal(modalElement);
 
-    document.querySelectorAll("[data-office-modal]").forEach(button => {
-      button.addEventListener("click", () => {
-        modalTitle.textContent = button.dataset.officeModal;
-        quickModal.show();
-      });
-    });
-  }
 
-  // Newsletter demo
-  const newsletter = document.getElementById("officeNewsletter");
-  if (newsletter) {
-    newsletter.addEventListener("submit", event => {
-      event.preventDefault();
-      const button = newsletter.querySelector("button");
-      button.innerHTML = 'Subscribed <i class="fa-solid fa-check ms-1"></i>';
-      button.disabled = true;
-    });
-  }
 
-  // Small parallax effect for hero image
-  const hero = document.querySelector(".office-hero");
-  if (hero && window.matchMedia("(min-width: 992px)").matches) {
-    hero.addEventListener("mousemove", event => {
-      const x = (event.clientX / window.innerWidth - 0.5) * 10;
-      const y = (event.clientY / window.innerHeight - 0.5) * 6;
-      hero.style.backgroundPosition = `calc(50% + ${x}px) calc(50% + ${y}px)`;
-    });
-    hero.addEventListener("mouseleave", () => {
-      hero.style.backgroundPosition = "center";
-    });
-  }
-});
+    <!-- countdown -->
+   
+<script>
+  // Initialize starting values
+  let days = 3;
+  let hours = 10;
+  let minutes = 7;
+  let seconds = 59;
 
+  function updateCountdown() {
+    document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+    document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+  }
+function tick() {
+    if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+      clearInterval(timer);
+      document.getElementById("countdown").innerHTML = "SALE ENDED";
+      return;
+    }
+
+    seconds--;
+    if (seconds < 0) {
+      seconds = 59;
+      minutes--;
+      if (minutes < 0) {
+        minutes = 59;
+        hours--;
+        if (hours < 0) {
+          hours = 23;
+          days--;
+        }
+      }
+    }
+    updateCountdown();
+  }  updateCountdown();
+  const timer = setInterval(tick, 1000);
 </script>
 
+        <!-- AOS javascript -->
+           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+           AOS.init();
+           once: true
+          </script>
 
-
-
-  </body>
-
+     </body>
 
 </html>
