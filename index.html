@@ -3319,24 +3319,6 @@ document.addEventListener("DOMContentLoaded", function () {
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
     </script>
-  // Wishlist interaction
-  document.querySelectorAll(".office-wishlist").forEach(button => {
-    button.addEventListener("click", () => {
-      button.classList.toggle("is-liked");
-      const icon = button.querySelector("i");
-      icon.classList.toggle("fa-regular");
-      icon.classList.toggle("fa-solid");
-    });
-  });
-
-  // Quick-view modal
-  const modalElement = document.getElementById("officeQuickModal");
-  const modalTitle = document.getElementById("officeModalTitle");
-
-  if (modalElement && window.bootstrap) {
-    const quickModal = new bootstrap.Modal(modalElement);
-
-
 
     <!-- countdown -->
    
