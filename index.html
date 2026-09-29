@@ -3062,6 +3062,214 @@
 
         });
     </script>
+
+
+
+
+
+
+       
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const track = document.getElementById("aboutCarouselTrack");
+    const cards = document.querySelectorAll(".about-theme-card");
+    const dots = document.querySelectorAll(".about-dot");
+
+    const prevButton = document.getElementById("aboutPrev");
+    const nextButton = document.getElementById("aboutNext");
+
+    const currentSlide =
+        document.getElementById("aboutCurrentSlide");
+
+    let currentIndex = 1;
+
+    function updateCarousel() {
+
+        cards.forEach((card, index) => {
+
+            card.classList.remove(
+                "about-theme-card-active"
+            );
+
+            if (index === currentIndex) {
+
+                card.classList.add(
+                    "about-theme-card-active"
+                );
+
+            }
+
+        });
+
+
+        dots.forEach((dot, index) => {
+
+            dot.classList.remove(
+                "about-dot-active"
+            );
+
+            if (index === currentIndex) {
+
+                dot.classList.add(
+                    "about-dot-active"
+                );
+
+            }
+
+        });
+
+
+        /*
+            Update number
+        */
+
+        let number =
+            String(currentIndex + 1).padStart(2, "0");
+
+        currentSlide.textContent = number;
+
+
+        /*
+            Move carousel
+        */
+
+        const activeCard = cards[currentIndex];
+
+        const trackWidth = track.offsetWidth;
+
+        const cardCenter =
+            activeCard.offsetLeft +
+            activeCard.offsetWidth / 2;
+
+        const move =
+            cardCenter -
+            trackWidth / 2;
+
+        track.scrollTo({
+
+            left: move,
+
+            behavior: "smooth"
+
+        });
+
+    }
+
+
+    /* NEXT */
+
+    nextButton.addEventListener("click", function () {
+
+        currentIndex++;
+
+        if (currentIndex >= cards.length) {
+            currentIndex = 0;
+        }
+
+        updateCarousel();
+
+    });
+
+
+    /* PREVIOUS */
+
+    prevButton.addEventListener("click", function () {
+
+        currentIndex--;
+
+        if (currentIndex < 0) {
+            currentIndex = cards.length - 1;
+        }
+
+        updateCarousel();
+
+    });
+
+
+    /* DOT CLICK */
+
+    dots.forEach((dot, index) => {
+
+        dot.addEventListener("click", function () {
+
+            currentIndex = index;
+
+            updateCarousel();
+
+        });
+
+    });
+
+
+    /*
+        AUTO PLAY
+    */
+
+    let autoplay = setInterval(function () {
+
+        currentIndex++;
+
+        if (currentIndex >= cards.length) {
+            currentIndex = 0;
+        }
+
+        updateCarousel();
+
+    }, 4500);
+
+
+    /*
+        Pause when mouse is over carousel
+    */
+
+    track.addEventListener("mouseenter", function () {
+        clearInterval(autoplay);
+    });
+
+
+    track.addEventListener("mouseleave", function () {
+
+        autoplay = setInterval(function () {
+
+            currentIndex++;
+
+            if (currentIndex >= cards.length) {
+                currentIndex = 0;
+            }
+
+            updateCarousel();
+
+        }, 4500);
+
+    });
+
+
+    /*
+        Initial position
+    */
+
+    setTimeout(function () {
+        updateCarousel();
+    }, 100);
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+       
+
+       
     <script>
 document.addEventListener("DOMContentLoaded", function () {
 
